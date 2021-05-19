@@ -3,7 +3,7 @@ name: "Compile Mermaid"
 on:
   push:
     paths:
-      - "README.md"
+      - "_README.md"
 
 jobs:
   build:
