@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "source-sherlockizer-service"
+version = "0.1.0"
+description = ""
+authors = ["Thomas Bottini <thomas.bottini@cnrs.fr>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+chardet = "4.0.0"
+fastapi = "0.64.0"
+lxml = "4.6.2"
+psycopg2-binary = "2.8.6"
+pydantic = "1.8.1"
+python-multipart = "0.0.5"
+rdflib = "5.0.0"
+requests = "2.25.1"
+uvicorn = "0.13.4"
+bs4 = "^0.0.1"
+music21 = "^6.7.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,2923 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0" xml:id="mei-0">
+  <meiHead xml:id="meiHead-1">
+    <fileDesc xml:id="fileDesc-2">
+      <titleStmt xml:id="titleStmt-3">
+        <title xml:id="title-4">Das musikalische Opfer <titlePart type="subordinate" xml:id="titlePart-5">BWV 1079</titlePart> <titlePart type="subordinate" xml:id="titlePart-6">2. Triosonate c-Moll für Flöte, Violine und Basso continuo (1.
+          Satz)</titlePart> <titlePart type="subordinate" xml:id="titlePart-7">an electronic transcription</titlePart> </title>
+        <composer xml:id="composer-8">
+          <persName role="creator" auth.uri="http://d-nb.info/gnd/" codedval="11850553X" auth="GND" xml:id="persName-9">Johann Sebastian Bach</persName>
+        </composer>
+        <respStmt xml:id="respStmt-10">
+          <persName role="encoder" xml:id="persName-11">Maja Hartwig</persName>
+        </respStmt>
+      </titleStmt>
+      <pubStmt xml:id="pubStmt-12">
+        <publisher xml:id="publisher-13">
+          <corpName role="publisher" n="2" xml:id="corpName2" codedval="5115204-6" auth.uri="http://d-nb.info/gnd/" auth="GND">Musikwissenschaftliches Seminar <address xml:id="address-14">
+            <addrLine xml:id="addrLine-15">Gartenstrasse 20</addrLine> <addrLine xml:id="addrLine-16">32756 <geogName codedval="7004442" auth.uri="http://vocab.getty.edu/page/tgn/" auth="TGN" xml:id="geogName-17">Detmold</geogName> <geogName codedval="7000084" auth.uri="http://vocab.getty.edu/page/tgn/" auth="TGN" xml:id="geogName-18">Germany</geogName> </addrLine> </address> </corpName>
+        </publisher>
+        <availability xml:id="availability-19">
+          <useRestrict xml:id="useRestrict-20"> This encoding is in the public domain. However, the sources used to create
+            it may be under copyright. We believe their use by the MEI project for educational and
+            research purposes is covered by the Fair Use doctrine. However, we will remove any
+            material from the project archive when requested to do so by the copyright owner.
+          </useRestrict>
+        </availability>
+      </pubStmt>
+      <seriesStmt xml:id="seriesStmt-21">
+        <title xml:id="title-22">MEI Sample Collection</title>
+        <funder xml:id="funder-23">
+          <corpName role="funder" codedval="2007744-0" auth.uri="http://d-nb.info/gnd/" auth="GND" xml:id="corpName-24">German Research Foundation<address xml:id="address-25"> <addrLine xml:id="addrLine-26">Kennedyallee 40</addrLine> <addrLine xml:id="addrLine-27">
+            <geogName codedval="7005090" auth.uri="http://vocab.getty.edu/page/tgn/" auth="TGN" xml:id="geogName-28">Bonn</geogName> </addrLine> <addrLine xml:id="addrLine-29"> <geogName codedval="7000084" auth.uri="http://vocab.getty.edu/page/tgn/" auth="TGN" xml:id="geogName-30">Germany</geogName> </addrLine>
+            </address> </corpName>
+        </funder>
+        <funder xml:id="funder-31">
+          <corpName role="funder" codedval="18183-3" auth.uri="http://d-nb.info/gnd/18183-3" auth="Deutsche Nationalbibliothek" xml:id="corpName-32">National Endowment for the Humanities<address xml:id="address-33">
+            <addrLine xml:id="addrLine-34">1100 Pennsylvania Avenue N.W.</addrLine> <addrLine xml:id="addrLine-35"> <geogName codedval="7013962" auth.uri="http://vocab.getty.edu/page/tgn/" auth="TGN" xml:id="geogName-36">Washington,
+            DC</geogName> 20004</addrLine> <addrLine xml:id="addrLine-37"> <geogName codedval="7012149" auth.uri="http://vocab.getty.edu/page/tgn/" auth="TGN" xml:id="geogName-38">United States</geogName>
+            </addrLine> </address> </corpName>
+        </funder>
+        <respStmt xml:id="respStmt-39">
+          <corpName role="publisher" xml:id="corpName-40">MEI Project</corpName>
+        </respStmt>
+        <identifier xml:id="identifier-41">
+          <ref target="http://music-encoding.org/Suport/MEI_Sample_Collection" xml:id="ref-42"/>
+        </identifier>
+      </seriesStmt>
+    </fileDesc>
+    <encodingDesc xml:id="encodingDesc-43">
+      <appInfo xml:id="appInfo-44">
+        <application version="v1.0_beta" xml:id="app_20193104015869">
+          <name xml:id="name-45">mei30To40.xsl</name>
+        </application>
+      </appInfo>
+      <samplingDecl xml:id="samplingDecl-46">
+        <p xml:id="p-47">This is a handcoded file.</p>
+        <p xml:id="p-48">Example for figured Bass.</p>
+      </samplingDecl>
+      <classDecls xml:id="classDecls-49">
+        <taxonomy xml:id="taxonomy-50">
+          <bibl xml:id="OCLC_DDC" target="http://www.oclc.org/dewey/resources/summaries/default.htm#700">OCLC_DDC</bibl>
+          <category xml:id="_785.13">
+            <altId xml:id="altId-51">785.13</altId>
+            <label xml:id="label-52">Trios</label>
+          </category>
+        </taxonomy>
+        <taxonomy xml:id="taxonomy-53">
+          <bibl xml:id="OSWD" target="http://www.bsz-bw.de/cgi-bin/oswd-suche.pl">OSWD</bibl>
+          <category xml:id="_4129951-6">
+            <altId xml:id="altId-54">4129951-6</altId>
+            <label xml:id="label-55">Instrumentalmusik</label>
+          </category>
+        </taxonomy>
+      </classDecls>
+    </encodingDesc>
+    <workList xml:id="workList-56">
+      <work xml:id="work-57">
+        <title xml:id="title-58">Trio</title>
+        <composer xml:id="composer-59">
+          <persName role="composer" auth.uri="http://d-nb.info/gnd/" codedval="11850553X" auth="GND" xml:id="persName-60">Johann Sebastian Bach</persName>
+        </composer>
+        <key pname="c" mode="minor" xml:id="key-61"/>
+        <meter count="3" unit="4" xml:id="meter-62"/>
+        <tempo xml:id="tempo-63">Largo</tempo>
+        <incip xml:id="incip-64">
+          <incipCode form="parson" xml:id="incipCode-65">*uddurdduddduduu</incipCode>
+          <score xml:id="score-66">
+            <scoreDef meter.count="3" meter.unit="4" key.sig="3f" key.mode="minor" key.pname="c" xml:id="scoreDef-67">
+              <staffGrp symbol="bracket" xml:id="staffGrp-68">
+                <staffDef lines="5" n="1" clef.shape="G" clef.line="2" xml:id="staffDef-69">
+                  <label xml:id="label-70">Flauto traverso.</label>
+                </staffDef>
+                <staffDef lines="5" n="2" clef.shape="G" clef.line="2" xml:id="staffDef-71">
+                  <label xml:id="label-72">Violino.</label>
+                </staffDef>
+                <staffDef lines="5" n="3" clef.shape="F" clef.line="4" xml:id="staffDef-73">
+                  <label xml:id="label-74">Continuo.</label>
+                </staffDef>
+              </staffGrp>
+            </scoreDef>
+            <section xml:id="section-75">
+              <measure n="1" xml:id="measure-76">
+                <staff n="1" xml:id="staff-77">
+                  <layer xml:id="layer-78">
+                    <mRest xml:id="mRest-79"/>
+                  </layer>
+                </staff>
+                <staff n="2" xml:id="staff-80">
+                  <layer xml:id="layer-81">
+                    <beam xml:id="beam-82">
+                      <note pname="g" oct="4" dur="8" dots="1" xml:id="note-83"/>
+                      <note pname="e" oct="5" dur="16" xml:id="note-84"/>
+                    </beam>
+                    <note pname="c" oct="5" dur="8" grace="unknown" slur="i1" fontsize="small" xml:id="note-85"/>
+                    <note pname="b" oct="4" dur="4" dots="1" accid="n" slur="t1" xml:id="note-86"/>
+                    <note pname="c" oct="5" dur="8" xml:id="note-87"/>
+                  </layer>
+                </staff>
+                <staff n="3" xml:id="staff-88">
+                  <layer xml:id="layer-89">
+                    <beam xml:id="beam-90">
+                      <note pname="c" oct="3" dur="8" slur="i1" xml:id="note-91"/>
+                      <note pname="c" oct="3" dur="8" slur="m1" xml:id="note-92"/>
+                      <note pname="d" oct="3" dur="8" slur="m1" xml:id="note-93"/>
+                      <note pname="d" oct="3" dur="8" slur="m1" xml:id="note-94"/>
+                      <note pname="d" oct="3" dur="8" slur="m1" xml:id="note-95"/>
+                      <note pname="d" oct="3" dur="8" slur="t1" xml:id="note-96"/>
+                    </beam>
+                  </layer>
+                </staff>
+                <trill staff="2" tstamp="2" place="above" xml:id="trill-97"/>
+                <harm staff="3" tstamp="2" place="below" xml:id="harm-98">
+                  <fb xml:id="fb-99">
+                    <f xml:id="f-100">6<symbol glyph.num="U+266E" xml:id="symbol-101"/> </f>
+                  </fb>
+                </harm>
+                <dir staff="1" place="above" tstamp="0.5" xml:id="dir-102">Largo.</dir>
+              </measure>
+            </section>
+          </score>
+        </incip>
+        <creation xml:id="creation-103">
+          <date isodate="1747" xml:id="date-104">1747</date>
+        </creation>
+        <perfMedium xml:id="perfMedium-105">
+          <perfResList xml:id="perfResList-106">
+            <perfRes codedval="wu" xml:id="perfRes-107">Flauto traverso</perfRes>
+            <perfRes codedval="sa" xml:id="perfRes-108">Violino</perfRes>
+            <perfRes codedval="ke" xml:id="perfRes-109">Continuo</perfRes>
+          </perfResList>
+        </perfMedium>
+        <classification xml:id="classification-110">
+          <termList xml:id="termList-111">
+            <term class="#_4129951-6" xml:id="term-112">Instrumentalmusik</term>
+            <term class="#_785.13" xml:id="term-113">Trios</term>
+          </termList>
+        </classification>
+      </work>
+    </workList>
+    <manifestationList xml:id="manifestationList-114">
+      <manifestation xml:id="manifestation-115">
+        <identifier type="URI" xml:id="identifier-116">http://imslp.org/wiki/Musikalisches_Opfer,_BWV_1079_%28Bach,_Johann_Sebastian%29</identifier>
+        <titleStmt xml:id="titleStmt-117">
+          <title xml:id="title-118">Das Musikalische Opfer</title>
+          <title type="subordinate" xml:id="title-119">1. Satz, Trio</title>
+          <title type="work" xml:id="title-120">BWV 1079</title>
+          <title type="uniform" xml:id="title-121">Musikalisches Opfer &lt;2. Triosonate c-Moll für Flöte, Violine und
+            Basso continuo&gt;</title>
+          <respStmt xml:id="respStmt-122">
+            <persName role="composer" auth.uri="http://d-nb.info/gnd/" codedval="11850553X" auth="GND" xml:id="persName-123">Johann Sebastian Bach</persName>
+          </respStmt>
+        </titleStmt>
+        <pubStmt xml:id="pubStmt-124">
+          <respStmt xml:id="respStmt-125">
+            <persName role="editor" xml:id="persName-126">Alfred Dörffel (1821–1905)</persName>
+            <corpName role="publisher" xml:id="corpName-127">Breitkopf &amp; Härtel <geogName xml:id="geogName-128">Leipzig</geogName>
+            </corpName>
+          </respStmt>
+          <date xml:id="date-129">1885</date>
+        </pubStmt>
+        <physDesc xml:id="physDesc-130">
+          <plateNum xml:id="plateNum-131">B.W. XXXI(2).</plateNum>
+        </physDesc>
+        <seriesStmt xml:id="seriesStmt-132">
+          <title xml:id="title-133">Bach-Gesellschaft, Ausgabe <num xml:id="num-134">Bd. 31.2</num> </title>
+        </seriesStmt>
+      </manifestation>
+    </manifestationList>
+    <revisionDesc xml:id="revisionDesc-135">
+      <change n="1" xml:id="change-136">
+        <respStmt xml:id="respStmt-137">
+          <persName xml:id="persName-138">Maja Hartwig</persName>
+        </respStmt>
+        <changeDesc xml:id="changeDesc-139">
+          <p xml:id="p-140">Transformation to the new schema with <ref target="transformation.xsl" targettype="xsl_stylesheet" xml:id="ref-141">transformation.xsl</ref> </p>
+        </changeDesc>
+        <date isodate="2012-07-18" xml:id="date-142"/>
+      </change>
+      <change n="2" xml:id="change-143">
+        <respStmt xml:id="respStmt-144">
+          <persName xml:id="persName-145">Kristina Richts</persName>
+        </respStmt>
+        <changeDesc xml:id="changeDesc-146">
+          <p xml:id="p-147">Addition of metadata.</p>
+        </changeDesc>
+        <date isodate="2013-02-04" xml:id="date-148"/>
+      </change>
+      <change n="3" xml:id="change-149">
+        <changeDesc xml:id="changeDesc-150">
+          <p xml:id="p-151">Converted to MEI 2013 using mei2012To2013.xsl</p>
+        </changeDesc>
+        <date isodate="2013-09-10" xml:id="date-152"/>
+      </change>
+      <change n="4" xml:id="change-153">
+        <changeDesc xml:id="changeDesc-154">
+          <p xml:id="p-155">Converted to version 3.0.0 using mei21To30.xsl, version 1.0 beta</p>
+        </changeDesc>
+        <date isodate="2015-10-15" xml:id="date-156"/>
+      </change>
+      <change n="5" xml:id="change-157">
+        <respStmt xml:id="respStmt-158">
+          <persName xml:id="persName-159">Klaus Rettinghaus</persName>
+        </respStmt>
+        <changeDesc xml:id="changeDesc-160">
+          <p xml:id="p-161">Fixed several encoding errors.</p>
+        </changeDesc>
+        <date isodate="2016-08-02" xml:id="date-162"/>
+      </change>
+      <change n="6" resp="#app_20193104015869" xml:id="change-163">
+        <changeDesc xml:id="changeDesc-164">
+          <p xml:id="p-165">Converted to MEI version 4.0.0 using mei30To40.xsl, version 1.0 beta</p>
+        </changeDesc>
+        <date isodate="2019-01-03" xml:id="date-166"/>
+      </change>
+    </revisionDesc>
+  </meiHead>
+  <music xml:id="music-167">
+    <body xml:id="body-168">
+      <mdiv xml:id="mdiv-169">
+        <score xml:id="score-170">
+          <scoreDef meter.count="3" meter.unit="4" key.sig="3f" key.mode="minor" key.pname="c" xml:id="scoreDef-171">
+            <staffGrp symbol="bracket" xml:id="staffGrp-172">
+              <staffDef n="1" clef.shape="G" clef.line="2" xml:id="staffDef-173">
+                <label xml:id="label-174">Flauto traverso.</label>
+              </staffDef>
+              <staffDef n="2" clef.shape="G" clef.line="2" xml:id="staffDef-175">
+                <label xml:id="label-176">Violino.</label>
+              </staffDef>
+              <staffDef n="3" clef.shape="F" clef.line="4" xml:id="staffDef-177">
+                <label xml:id="label-178">Continuo.</label>
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="section-179">
+            <measure n="1" xml:id="m1">
+              <staff n="1" xml:id="staff-180">
+                <layer xml:id="layer-181">
+                  <mRest xml:id="mRest-182"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-183">
+                <layer xml:id="layer-184">
+                  <beam xml:id="beam-185">
+                    <note pname="g" oct="4" dur="8" dots="1" xml:id="note-186"/>
+                    <note pname="e" oct="5" dur="16" xml:id="note-187"/>
+                  </beam>
+                  <note pname="c" oct="5" dur="8" grace="unknown" slur="i1" fontsize="small" xml:id="note-188"/>
+                  <note pname="b" oct="4" dur="4" dots="1" accid="n" slur="t1" xml:id="note-189"/>
+                  <note pname="c" oct="5" dur="8" xml:id="note-190"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-191">
+                <layer xml:id="layer-192">
+                  <beam xml:id="beam-193">
+                    <note pname="c" oct="3" dur="8" slur="i1" xml:id="m1_s3_e1"/>
+                    <note pname="c" oct="3" dur="8" slur="m1" xml:id="note-194"/>
+                    <note pname="d" oct="3" dur="8" slur="m1" xml:id="note-195"/>
+                    <note pname="d" oct="3" dur="8" slur="m1" xml:id="note-196"/>
+                    <note pname="d" oct="3" dur="8" slur="m1" xml:id="note-197"/>
+                    <note pname="d" oct="3" dur="8" slur="t1" xml:id="m1_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <trill staff="2" tstamp="2" place="above" xml:id="trill-198"/>
+              <harm staff="3" tstamp="2" place="below" xml:id="harm-199">
+                <fb xml:id="fb-200">
+                  <f xml:id="f-201">6<symbol glyph.num="U+266E" xml:id="symbol-202"/> </f>
+                </fb>
+              </harm>
+              <dir staff="1" place="above" tstamp="0.5" xml:id="dir-203">Largo.</dir>
+            </measure>
+            <measure n="2" xml:id="m2">
+              <staff n="1" xml:id="staff-204">
+                <layer xml:id="layer-205">
+                  <mRest xml:id="mRest-206"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-207">
+                <layer xml:id="layer-208">
+                  <note pname="c" oct="5" dur="4" dots="1" xml:id="note-209"/>
+                  <beam xml:id="beam-210">
+                    <note pname="b" oct="4" dur="16" accid="f" xml:id="m2_s2_e2" stem.dir="up"/>
+                    <note pname="a" oct="4" dur="16" xml:id="note-211"/>
+                  </beam>
+                  <note pname="c" oct="5" dur="16" grace="unknown" stem.dir="up" xml:id="note-212"/>
+                  <beam xml:id="beam-213">
+                    <note pname="b" oct="4" dur="8" xml:id="note-214"/>
+                    <note pname="a" oct="4" dur="16" xml:id="note-215"/>
+                    <note pname="g" oct="4" dur="16" xml:id="m2_s2_e7"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-216">
+                <layer xml:id="layer-217">
+                  <note pname="e" oct="3" dur="8" xml:id="m2_s3_e1"/>
+                  <note pname="e" oct="3" dur="8" xml:id="note-218"/>
+                  <note pname="e" oct="3" dur="8" accid="n" xml:id="note-219"/>
+                  <note pname="e" oct="3" dur="8" xml:id="note-220"/>
+                  <note pname="e" oct="3" dur="8" xml:id="note-221"/>
+                  <note pname="e" oct="3" dur="8" xml:id="m2_s3_e6"/>
+                </layer>
+              </staff>
+              <slur staff="2" startid="#m2_s2_e2" endid="#m2_s2_e7" curvedir="below" xml:id="slur-222"/>
+              <slur staff="3" startid="#m2_s3_e1" endid="#m2_s3_e6" curvedir="above" xml:id="slur-223"/>
+              <harm staff="3" place="below" tstamp="1" extender="true" xml:id="harm-224">
+                <fb xml:id="fb-225">
+                  <f xml:id="f-226">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-227">
+                <fb xml:id="fb-228">
+                  <f xml:id="f-229">5<symbol glyph.num="U+266D" xml:id="symbol-230"/> </f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="3" xml:id="m3">
+              <staff n="1" xml:id="staff-231">
+                <layer xml:id="layer-232">
+                  <beam xml:id="beam-233">
+                    <note pname="c" oct="5" dur="8" dots="1" xml:id="note-234"/>
+                    <note pname="a" oct="5" dur="16" xml:id="note-235"/>
+                  </beam>
+                  <note pname="f" oct="5" dur="8" grace="unknown" slur="i1" fontsize="small" stem.dir="up" xml:id="note-236"/>
+                  <note pname="e" oct="5" dur="4" dots="1" accid="n" slur="t1" xml:id="note-237"/>
+                  <note pname="f" oct="5" dur="8" stem.dir="down" xml:id="note-238"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-239">
+                <layer xml:id="layer-240">
+                  <beam xml:id="beam-241">
+                    <note pname="a" oct="4" dur="16" xml:id="note-242"/>
+                    <note pname="g" oct="4" dur="16" slur="i1" xml:id="note-243"/>
+                    <note pname="a" oct="4" dur="16" slur="m1" xml:id="note-244"/>
+                    <note pname="c" oct="5" dur="16" slur="t1" xml:id="note-245"/>
+                  </beam>
+                  <beam xml:id="beam-246">
+                    <note pname="b" oct="4" dur="16" slur="i1" xml:id="note-247"/>
+                    <note pname="d" oct="5" dur="16" accid="f" slur="t1" xml:id="note-248"/>
+                    <note pname="d" oct="5" dur="16" slur="i2" xml:id="note-249"/>
+                    <note pname="c" oct="5" dur="16" slur="t2" xml:id="note-250"/>
+                  </beam>
+                  <beam xml:id="beam-251">
+                    <note pname="c" oct="5" dur="16" slur="i1" xml:id="note-252"/>
+                    <note pname="b" oct="4" dur="16" slur="t1" xml:id="note-253"/>
+                    <note pname="b" oct="4" dur="16" slur="i2" xml:id="note-254"/>
+                    <note pname="c" oct="5" dur="16" slur="t2" xml:id="note-255"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-256">
+                <layer xml:id="layer-257">
+                  <beam xml:id="beam-258">
+                    <note pname="f" oct="3" dur="8" xml:id="m3_s3_e1"/>
+                    <note pname="f" oct="3" dur="8" xml:id="note-259"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-260"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-261"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-262"/>
+                    <note pname="g" oct="3" dur="8" xml:id="m3_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="3" startid="#m3_s3_e1" endid="#m3_s3_e6" curvedir="above" xml:id="slur-263"/>
+              <trill staff="1" tstamp="2" place="above" xml:id="trill-264"/>
+              <harm staff="3" tstamp="2" place="below" xml:id="harm-265">
+                <fb xml:id="fb-266">
+                  <f xml:id="f-267">6<symbol glyph.num="U+266E" xml:id="symbol-268"/> </f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="4" xml:id="m4">
+              <staff n="1" xml:id="staff-269">
+                <layer xml:id="layer-270">
+                  <note pname="f" oct="5" dur="4" dots="1" stem.dir="down" xml:id="note-271"/>
+                  <beam xml:id="beam-272">
+                    <note pname="e" oct="5" dur="16" accid="f" xml:id="m4_s1_e2"/>
+                    <note pname="d" oct="5" dur="16" xml:id="note-273"/>
+                  </beam>
+                  <note pname="g" oct="5" dur="8" grace="unknown" fontsize="small" stem.dir="up" xml:id="note-274"/>
+                  <beam xml:id="beam-275">
+                    <note pname="f" oct="5" dur="8" xml:id="note-276"/>
+                    <note pname="e" dur="16" oct="5" xml:id="note-277"/>
+                    <note pname="d" dur="16" oct="5" xml:id="m4_s1_e7"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-278">
+                <layer xml:id="layer-279">
+                  <beam xml:id="beam-280">
+                    <note pname="c" oct="5" dur="16" xml:id="note-281"/>
+                    <note pname="b" oct="4" dur="16" accid="n" slur="i1" xml:id="note-282"/>
+                    <note pname="c" oct="5" dur="16" slur="m1" xml:id="note-283"/>
+                    <note pname="e" oct="5" dur="16" slur="t1" xml:id="note-284"/>
+                  </beam>
+                  <note pname="d" oct="5" dur="2" accid="n" xml:id="m4_s2_e5"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-285">
+                <layer xml:id="layer-286">
+                  <beam xml:id="beam-287">
+                    <note pname="a" oct="3" dur="8" xml:id="note-288"/>
+                    <note pname="a" oct="3" dur="8" xml:id="note-289"/>
+                  </beam>
+                  <beam xml:id="beam-290">
+                    <note pname="b" oct="2" dur="8" accid="n" xml:id="note-291"/>
+                    <note pname="b" oct="2" dur="8" accid="n" xml:id="note-292"/>
+                    <note pname="b" oct="2" dur="8" accid="n" xml:id="note-293"/>
+                    <note pname="b" oct="2" dur="8" accid="n" xml:id="note-294"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="1" startid="#m4_s1_e2" endid="#m4_s1_e7" curvedir="above" xml:id="slur-295"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-296">
+                <fb xml:id="fb-297">
+                  <f xml:id="f-298">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-299">
+                <fb xml:id="fb-300">
+                  <f xml:id="f-301">6</f>
+                  <f xml:id="f-302">5<symbol glyph.num="U+266D" xml:id="symbol-303"/> </f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="5" xml:id="m5">
+              <staff n="1" xml:id="staff-304">
+                <layer xml:id="layer-305">
+                  <note pname="c" oct="5" dur="16" grace="unknown" slur="i1" stem.dir="up" fontsize="small" xml:id="note-306"/>
+                  <beam xml:id="beam-307">
+                    <note pname="b" oct="4" dur="16" slur="t1" xml:id="m5_s1_e2"/>
+                    <note pname="a" oct="4" dur="16" accid="n" xml:id="note-308"/>
+                    <note pname="g" oct="4" dur="8" xml:id="m5_s1_e4"/>
+                  </beam>
+                  <rest dur="4" xml:id="rest-309"/>
+                  <rest dur="4" xml:id="rest-310"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-311">
+                <layer xml:id="layer-312">
+                  <beam xml:id="beam-313">
+                    <note pname="d" oct="6" dur="8" dots="1" xml:id="note-314"/>
+                    <note pname="d" oct="5" dur="16" xml:id="note-315"/>
+                  </beam>
+                  <beam xml:id="beam-316">
+                    <note pname="e" oct="5" dur="32" grace="unknown" xml:id="m5_s2_e3"/>
+                    <note pname="f" oct="5" dur="32" grace="unknown" xml:id="m5_s2_e4"/>
+                    <note pname="g" oct="5" dur="32" grace="unknown" xml:id="m5_s2_e5"/>
+                  </beam>
+                  <note pname="f" oct="5" dur="4" dots="1" xml:id="note-317"/>
+                  <note pname="e" oct="5" dur="8" xml:id="note-318"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-319">
+                <layer xml:id="layer-320">
+                  <beam xml:id="beam-321">
+                    <note pname="g" oct="2" dur="8" xml:id="m5_s3_e1"/>
+                    <note pname="g" oct="2" dur="8" xml:id="note-322"/>
+                    <note pname="a" oct="2" dur="8" accid="n" xml:id="note-323"/>
+                    <note pname="a" oct="2" dur="8" xml:id="note-324"/>
+                    <note pname="b" oct="2" dur="8" accid="n" xml:id="note-325"/>
+                    <note pname="b" oct="2" dur="8" accid="n" xml:id="m5_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="2" startid="#m5_s2_e3" endid="#m5_s2_e5" curvedir="below" xml:id="slur-326"/>
+              <slur staff="3" startid="#m5_s3_e1" endid="#m5_s3_e6" curvedir="below" xml:id="slur-327"/>
+              <trill staff="2" place="below" tstamp="2" xml:id="trill-328"/>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-329">
+                <fb xml:id="fb-330">
+                  <f xml:id="f-331">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-332">
+                <fb xml:id="fb-333">
+                  <f xml:id="f-334">6</f>
+                  <f xml:id="f-335">5</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="6" xml:id="m6">
+              <staff n="1" xml:id="staff-336">
+                <layer xml:id="layer-337">
+                  <beam xml:id="beam-338">
+                    <note pname="g" oct="5" dur="8" dots="1" xml:id="note-339"/>
+                    <note pname="g" oct="4" dur="16" xml:id="note-340"/>
+                  </beam>
+                  <beam xml:id="beam-341">
+                    <note pname="a" oct="4" dur="32" accid="n" grace="unknown" slur="i1" xml:id="note-342"/>
+                    <note pname="b" oct="4" dur="32" grace="unknown" slur="m1" xml:id="note-343"/>
+                    <note pname="c" oct="5" dur="32" grace="unknown" slur="m1" xml:id="note-344"/>
+                  </beam>
+                  <note pname="b" oct="4" dur="4" dots="1" slur="t1" xml:id="note-345"/>
+                  <note pname="a" oct="4" dur="8" accid="n" xml:id="note-346"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-347">
+                <layer xml:id="layer-348">
+                  <beam xml:id="beam-349">
+                    <note pname="e" oct="5" dur="16" slur="i1" xml:id="note-350"/>
+                    <note pname="f" oct="5" dur="16" slur="m1" xml:id="note-351"/>
+                    <note pname="e" oct="5" dur="16" slur="t1" xml:id="note-352"/>
+                    <note pname="d" oct="5" dur="16" artic="stacc" xml:id="note-353"/>
+                  </beam>
+                  <beam xml:id="beam-354">
+                    <note pname="d" oct="5" dur="16" slur="i1" xml:id="note-355"/>
+                    <note pname="e" oct="5" dur="16" slur="m1" xml:id="note-356"/>
+                    <note pname="d" oct="5" dur="16" slur="t1" xml:id="note-357"/>
+                    <note pname="c" oct="5" dur="16" artic="stacc" xml:id="note-358"/>
+                  </beam>
+                  <note pname="c" oct="5" dur="4" slur="i1" xml:id="note-359"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-360">
+                <layer xml:id="layer-361">
+                  <beam xml:id="beam-362">
+                    <note pname="c" oct="3" dur="8" xml:id="m6_s3_e1"/>
+                    <note pname="c" oct="3" dur="8" xml:id="note-363"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-364"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-365"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-366"/>
+                    <note pname="e" oct="3" dur="8" xml:id="m6_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="3" startid="#m6_s3_e1" endid="#m6_s3_e6" curvedir="below" xml:id="slur-367"/>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-368">
+                <fb xml:id="fb-369">
+                  <f xml:id="f-370">6</f>
+                  <f xml:id="f-371">4</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-372">
+                <fb xml:id="fb-373">
+                  <f xml:id="f-374">6</f>
+                  <f xml:id="f-375">5</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="7" xml:id="m7">
+              <staff n="1" xml:id="staff-376">
+                <layer xml:id="layer-377">
+                  <beam xml:id="beam-378">
+                    <note pname="a" oct="4" dur="16" accid="n" slur="i1" xml:id="note-379"/>
+                    <note pname="b" oct="4" dur="16" slur="m1" xml:id="note-380"/>
+                    <note pname="a" oct="4" dur="16" slur="t1" xml:id="note-381"/>
+                    <note pname="g" oct="4" dur="16" artic="stacc" xml:id="note-382"/>
+                  </beam>
+                  <beam xml:id="beam-383">
+                    <note pname="g" oct="4" dur="16" slur="i1" xml:id="note-384"/>
+                    <note pname="a" oct="4" dur="16" slur="m1" xml:id="note-385"/>
+                    <note pname="g" oct="4" dur="16" slur="t1" xml:id="note-386"/>
+                    <note pname="f" oct="4" dur="16" artic="stacc" accid="s" xml:id="note-387"/>
+                  </beam>
+                  <beam xml:id="beam-388">
+                    <note pname="f" oct="4" dur="8" dots="1" xml:id="note-389"/>
+                    <note pname="f" oct="3" dur="16" accid="s" xml:id="note-390"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-391">
+                <layer xml:id="layer-392">
+                  <beam xml:id="beam-393">
+                    <note pname="c" oct="5" dur="8" dots="1" slur="t1" xml:id="note-394"/>
+                    <note pname="e" oct="4" dur="16" xml:id="note-395"/>
+                  </beam>
+                  <note pname="e" oct="4" dur="4" tie="i" xml:id="note-396"/>
+                  <beam xml:id="beam-397">
+                    <note pname="e" oct="4" dur="8" tie="t" dots="1" xml:id="note-398"/>
+                    <note pname="e" oct="5" dur="16" xml:id="note-399"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-400">
+                <layer xml:id="layer-401">
+                  <beam xml:id="beam-402">
+                    <note pname="f" oct="2" dur="8" accid="s" xml:id="note-403"/>
+                    <note pname="a" oct="2" dur="8" accid="n" xml:id="note-404"/>
+                    <note pname="c" oct="3" dur="8" xml:id="note-405"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-406"/>
+                    <note pname="c" oct="3" dur="8" xml:id="note-407"/>
+                    <note pname="a" oct="2" dur="8" xml:id="note-408"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-409">
+                <fb xml:id="fb-410">
+                  <f xml:id="f-411">7</f>
+                  <f xml:id="f-412">5</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-413">
+                <fb xml:id="fb-414">
+                  <f xml:id="f-415">5</f>
+                  <f xml:id="f-416">3</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" extender="true" xml:id="harm-417">
+                <fb xml:id="fb-418">
+                  <f xml:id="f-419">4</f>
+                  <f xml:id="f-420">3</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="8" xml:id="m8">
+              <staff n="1" xml:id="staff-421">
+                <layer xml:id="layer-422">
+                  <beam xml:id="beam-423">
+                    <note pname="g" oct="5" dur="8" dots="1" xml:id="note-424"/>
+                    <note pname="g" oct="4" dur="16" xml:id="note-425"/>
+                  </beam>
+                  <note pname="b" oct="4" dur="4" slur="i1" xml:id="note-426"/>
+                  <beam xml:id="beam-427">
+                    <note pname="a" oct="4" dur="8" dots="1" accid="n" slur="t1" xml:id="note-428"/>
+                    <note pname="g" oct="4" dur="16" xml:id="note-429"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-430">
+                <layer xml:id="layer-431">
+                  <beam xml:id="beam-432">
+                    <note pname="d" oct="5" dur="8" dots="1" xml:id="note-433"/>
+                    <note pname="b" oct="5" dur="16" xml:id="note-434"/>
+                  </beam>
+                  <note pname="g" oct="5" dur="4" slur="i1" xml:id="note-435"/>
+                  <beam xml:id="beam-436">
+                    <note pname="f" oct="5" dur="8" accid="s" dots="1" xml:id="note-437"/>
+                    <note pname="g" oct="5" dur="16" xml:id="note-438"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-439">
+                <layer xml:id="layer-440">
+                  <beam xml:id="beam-441">
+                    <note pname="b" oct="3" dur="8" xml:id="note-442"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-443"/>
+                    <note pname="d" oct="2" dur="8" xml:id="note-444"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-445"/>
+                    <note pname="d" oct="2" dur="8" xml:id="note-446"/>
+                    <note pname="d" oct="2" dur="8" xml:id="note-447"/>
+                  </beam>
+                </layer>
+              </staff>
+              <trill staff="1" place="above" tstamp="3" xml:id="trill-448"/>
+              <trill staff="2" place="above" tstamp="3" xml:id="trill-449"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-450">
+                <fb xml:id="fb-451">
+                  <f xml:id="f-452">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-453">
+                <fb xml:id="fb-454">
+                  <f xml:id="f-455">6</f>
+                  <f xml:id="f-456">4</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-457">
+                <fb xml:id="fb-458">
+                  <f xml:id="f-459">5<symbol glyph.num="U+266E" xml:id="symbol-460"/> </f>
+                  <f xml:id="f-461">
+                    <symbol glyph.num="U+266F" xml:id="symbol-462"/>
+                  </f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="9" xml:id="m9">
+              <staff n="1" xml:id="staff-463">
+                <layer xml:id="layer-464">
+                  <note pname="g" oct="4" dur="4" xml:id="note-465"/>
+                  <note pname="d" oct="5" dur="2" tie="i" xml:id="note-466"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-467">
+                <layer xml:id="layer-468">
+                  <beam xml:id="beam-469">
+                    <note pname="g" oct="5" dur="16" xml:id="note-470"/>
+                    <note pname="b" oct="5" dur="16" slur="i1" xml:id="note-471"/>
+                    <note pname="c" oct="5" dur="16" accid="s" slur="m1" xml:id="note-472"/>
+                    <note pname="d" oct="5" dur="16" slur="t1" xml:id="note-473"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-474"/>
+                  <beam xml:id="beam-475">
+                    <note pname="g" oct="5" dur="16" slur="i2" xml:id="note-476"/>
+                    <note pname="a" oct="4" dur="16" accid="n" slur="m2" xml:id="note-477"/>
+                    <note pname="b" oct="4" dur="16" slur="t3" xml:id="note-478"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-479"/>
+                  <beam xml:id="beam-480">
+                    <note pname="d" oct="5" dur="16" slur="i3" xml:id="note-481"/>
+                    <note pname="f" oct="4" dur="16" accid="s" slur="m3" xml:id="note-482"/>
+                    <note pname="g" oct="4" dur="16" slur="t3" xml:id="note-483"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-484">
+                <layer xml:id="layer-485">
+                  <beam xml:id="beam-486">
+                    <note pname="g" oct="2" dur="8" xml:id="note-487"/>
+                    <note pname="g" oct="2" dur="8" xml:id="note-488"/>
+                    <note pname="b" oct="3" dur="8" xml:id="note-489"/>
+                    <note pname="f" oct="3" dur="8" xml:id="note-490"/>
+                    <note pname="b" oct="3" dur="8" xml:id="note-491"/>
+                    <note pname="g" oct="2" dur="8" xml:id="note-492"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="2" extender="true" xml:id="harm-493">
+                <fb xml:id="fb-494">
+                  <f xml:id="f-495">6</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="10" xml:id="m10">
+              <staff n="1" xml:id="staff-496">
+                <layer xml:id="layer-497">
+                  <beam xml:id="beam-498">
+                    <note pname="d" oct="5" dur="16" tie="t" xml:id="note-499"/>
+                    <note pname="g" oct="4" dur="16" xml:id="note-500"/>
+                    <note pname="f" oct="5" dur="16" accid="n" xml:id="note-501"/>
+                    <note pname="e" oct="5" dur="16" xml:id="note-502"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-503"/>
+                  <beam xml:id="beam-504">
+                    <note pname="b" oct="4" dur="16" slur="i1" accid="n" xml:id="note-505"/>
+                    <note pname="a" oct="5" dur="16" accid="f" slur="m1" xml:id="note-506"/>
+                    <note pname="g" oct="5" dur="16" slur="t1" xml:id="note-507"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-508"/>
+                  <beam xml:id="beam-509">
+                    <note pname="d" oct="5" dur="16" slur="i2" xml:id="note-510"/>
+                    <note pname="c" oct="6" dur="16" slur="m2" xml:id="note-511"/>
+                    <note pname="b" oct="5" dur="16" slur="t2" accid="n" xml:id="note-512"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-513">
+                <layer xml:id="layer-514">
+                  <beam xml:id="beam-515">
+                    <note pname="g" oct="4" dur="16" artic="stacc" xml:id="note-516"/>
+                    <note pname="d" oct="5" dur="16" slur="i3" xml:id="note-517"/>
+                    <note pname="b" oct="5" dur="16" slur="m3" accid="n" xml:id="note-518"/>
+                    <note pname="c" oct="5" dur="16" slur="t3" xml:id="note-519"/>
+                  </beam>
+                  <beam xml:id="beam-520">
+                    <note pname="a" oct="5" dur="8" accid="f" xml:id="m10_s2_e5"/>
+                    <note pname="f" oct="5" dur="8" xml:id="note-521"/>
+                    <note pname="b" oct="4" dur="8" accid="n" xml:id="note-522"/>
+                    <note pname="f" oct="4" dur="8" xml:id="m10_s2_e8"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-523">
+                <layer xml:id="layer-524">
+                  <beam xml:id="beam-525">
+                    <note pname="e" oct="2" dur="8" xml:id="note-526"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-527"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-528"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-529"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-530"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-531"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-532">
+                <fb xml:id="fb-533">
+                  <f xml:id="f-534">7</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="1.5" xml:id="harm-535">
+                <fb xml:id="fb-536">
+                  <f xml:id="f-537">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-538">
+                <fb xml:id="fb-539">
+                  <f xml:id="f-540">6</f>
+                  <f xml:id="f-541">5<symbol glyph.num="U+266D" xml:id="symbol-542"/> </f>
+                </fb>
+              </harm>
+              <slur staff="2" startid="#m10_s2_e5" endid="#m10_s2_e8" curvedir="above" xml:id="slur-543"/>
+            </measure>
+            <measure n="11" xml:id="m11">
+              <staff n="1" xml:id="staff-544">
+                <layer xml:id="layer-545">
+                  <beam xml:id="beam-546">
+                    <note pname="c" oct="6" dur="16" xml:id="note-547"/>
+                    <note pname="e" oct="6" dur="16" slur="i1" xml:id="note-548"/>
+                    <note pname="f" oct="5" dur="16" accid="s" slur="m1" xml:id="note-549"/>
+                    <note pname="g" oct="5" dur="16" slur="t1" xml:id="note-550"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-551"/>
+                  <beam xml:id="beam-552">
+                    <note pname="c" oct="6" dur="16" slur="i2" xml:id="note-553"/>
+                    <note pname="d" oct="5" dur="16" slur="m2" xml:id="note-554"/>
+                    <note pname="e" oct="5" dur="16" slur="t2" xml:id="note-555"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-556"/>
+                  <beam xml:id="beam-557">
+                    <note pname="g" oct="5" dur="16" slur="i3" xml:id="note-558"/>
+                    <note pname="b" oct="4" dur="16" slur="m3" accid="n" xml:id="note-559"/>
+                    <note pname="c" oct="5" dur="16" slur="t3" xml:id="note-560"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-561">
+                <layer xml:id="layer-562">
+                  <note pname="f" oct="4" dur="16" slur="i1" grace="unknown" xml:id="note-563"/>
+                  <beam xml:id="beam-564">
+                    <note pname="e" oct="4" dur="8" xml:id="m11_s2_e2"/>
+                    <note pname="d" oct="4" dur="16" xml:id="note-565"/>
+                    <note pname="c" oct="4" dur="16" xml:id="m11_s2_e4"/>
+                  </beam>
+                  <note pname="g" oct="4" dur="2" tie="i" xml:id="note-566"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-567">
+                <layer xml:id="layer-568">
+                  <beam xml:id="beam-569">
+                    <note pname="c" oct="3" dur="8" xml:id="note-570"/>
+                    <note pname="c" oct="3" dur="8" xml:id="note-571"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-572"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-573"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-574"/>
+                    <note pname="c" oct="3" dur="8" xml:id="note-575"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="2" startid="#m11_s2_e2" endid="#m11_s2_e4" curvedir="below" xml:id="slur-576"/>
+              <harm staff="3" place="below" tstamp="2" extender="true" xml:id="harm-577">
+                <fb xml:id="fb-578">
+                  <f xml:id="f-579">6</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="12" xml:id="m12">
+              <staff n="1" xml:id="staff-580">
+                <layer xml:id="layer-581">
+                  <beam xml:id="beam-582">
+                    <note pname="c" oct="5" dur="16" xml:id="note-583"/>
+                    <note pname="b" oct="5" dur="16" accid="f" slur="i1" xml:id="note-584"/>
+                    <note pname="e" oct="5" dur="16" accid="n" slur="m1" xml:id="note-585"/>
+                    <note pname="f" oct="5" dur="16" slur="t1" xml:id="note-586"/>
+                  </beam>
+                  <beam xml:id="beam-587">
+                    <note pname="d" oct="6" dur="8" accid="f" xml:id="m12_s1_e5"/>
+                    <note pname="b" oct="5" dur="8" xml:id="note-588"/>
+                    <note pname="e" oct="5" dur="8" accid="n" xml:id="note-589"/>
+                    <note pname="b" oct="4" dur="8" xml:id="m12_s1_e8"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-590">
+                <layer xml:id="layer-591">
+                  <beam xml:id="beam-592">
+                    <note pname="g" oct="4" dur="16" tie="t" xml:id="note-593"/>
+                    <note pname="c" oct="4" dur="16" slur="i1" xml:id="note-594"/>
+                    <note pname="b" oct="4" dur="16" slur="m1" xml:id="note-595"/>
+                    <note pname="a" oct="4" dur="16" slur="t1" xml:id="note-596"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-597"/>
+                  <beam xml:id="beam-598">
+                    <note pname="e" oct="4" dur="16" slur="i2" accid="n" xml:id="note-599"/>
+                    <note pname="d" oct="5" dur="16" slur="m2" accid="f" xml:id="note-600"/>
+                    <note pname="c" oct="5" dur="16" slur="t2" xml:id="note-601"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-602"/>
+                  <beam xml:id="beam-603">
+                    <note pname="g" oct="4" dur="16" slur="i3" xml:id="note-604"/>
+                    <note pname="f" oct="5" dur="16" slur="m3" xml:id="note-605"/>
+                    <note pname="e" oct="5" dur="16" slur="t3" accid="n" xml:id="note-606"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-607">
+                <layer xml:id="layer-608">
+                  <beam xml:id="beam-609">
+                    <note pname="a" oct="2" dur="8" xml:id="note-610"/>
+                    <note pname="a" oct="3" dur="8" xml:id="note-611"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-612"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-613"/>
+                    <note pname="c" oct="4" dur="8" xml:id="note-614"/>
+                    <note pname="c" oct="4" dur="8" xml:id="note-615"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="1" startid="#m12_s1_e5" endid="#m12_s1_e8" xml:id="slur-616"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-617">
+                <fb xml:id="fb-618">
+                  <f xml:id="f-619">7</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="1.5" xml:id="harm-620">
+                <fb xml:id="fb-621">
+                  <f xml:id="f-622">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-623">
+                <fb xml:id="fb-624">
+                  <f xml:id="f-625">6<symbol glyph.num="U+266E" xml:id="symbol-626"/> </f>
+                  <f xml:id="f-627">5<symbol glyph.num="U+266D" xml:id="symbol-628"/> </f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-629">
+                <fb xml:id="fb-630">
+                  <f xml:id="f-631">7</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="13" xml:id="m13">
+              <staff n="1" xml:id="staff-632">
+                <layer xml:id="layer-633">
+                  <beam xml:id="beam-634">
+                    <note pname="a" oct="4" dur="8" dots="1" xml:id="note-635"/>
+                    <note pname="a" oct="5" dur="16" xml:id="note-636"/>
+                  </beam>
+                  <note pname="f" oct="5" dur="8" grace="unknown" slur="i1" xml:id="note-637"/>
+                  <note pname="e" oct="5" dur="4" dots="1" accid="n" slur="t1" xml:id="note-638"/>
+                  <note pname="f" oct="5" dur="8" xml:id="note-639"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-640">
+                <layer xml:id="layer-641">
+                  <note pname="f" oct="5" dur="4" xml:id="note-642"/>
+                  <rest dur="4" xml:id="rest-643"/>
+                  <rest dur="4" xml:id="rest-644"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-645">
+                <layer xml:id="layer-646">
+                  <beam xml:id="beam-647">
+                    <note pname="f" oct="3" dur="8" xml:id="m13_s3_e1"/>
+                    <note pname="f" oct="3" dur="8" xml:id="note-648"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-649"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-650"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-651"/>
+                    <note pname="g" oct="3" dur="8" xml:id="m13_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="3" startid="#m13_s3_e1" endid="#m13_s3_e6" xml:id="slur-652"/>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-653">
+                <fb xml:id="fb-654">
+                  <f xml:id="f-655">6<symbol glyph.num="U+266E" xml:id="symbol-656"/> </f>
+                </fb>
+              </harm>
+              <trill staff="1" place="above" tstamp="2" xml:id="trill-657"/>
+            </measure>
+            <measure n="14" xml:id="m14">
+              <staff n="1" xml:id="staff-658">
+                <layer xml:id="layer-659">
+                  <note pname="f" oct="5" dur="4" dots="1" xml:id="note-660"/>
+                  <beam xml:id="beam-661">
+                    <note pname="e" oct="5" dur="16" accid="f" xml:id="m14_s1_e2"/>
+                    <note pname="d" oct="5" dur="16" xml:id="note-662"/>
+                  </beam>
+                  <note pname="f" oct="5" dur="16" grace="unknown" xml:id="note-663"/>
+                  <beam xml:id="beam-664">
+                    <note pname="f" oct="5" dur="8" xml:id="note-665"/>
+                    <note pname="e" oct="5" dur="16" xml:id="note-666"/>
+                    <note pname="d" oct="5" dur="16" xml:id="m14_s1_e7"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-667">
+                <layer xml:id="layer-668">
+                  <mRest xml:id="mRest-669"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-670">
+                <layer xml:id="layer-671">
+                  <beam xml:id="beam-672">
+                    <note pname="a" oct="3" dur="8" xml:id="note-673"/>
+                    <note pname="a" oct="3" dur="8" xml:id="note-674"/>
+                    <note pname="b" oct="2" dur="8" accid="n" xml:id="m14_s3_e2"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-675"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-676"/>
+                    <note pname="b" oct="2" dur="8" xml:id="m14_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="1" startid="#m14_s1_e2" endid="#m14_s1_e7" curvedir="above" xml:id="slur-677"/>
+              <slur staff="3" startid="#m14_s3_e2" endid="#m14_s3_e6" curvedir="above" xml:id="slur-678"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-679">
+                <fb xml:id="fb-680">
+                  <f xml:id="f-681">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-682">
+                <fb xml:id="fb-683">
+                  <f xml:id="f-684">6</f>
+                  <f xml:id="f-685">5<symbol glyph.num="U+266D" xml:id="symbol-686"/> </f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="15" xml:id="m15">
+              <staff n="1" xml:id="staff-687">
+                <layer xml:id="layer-688">
+                  <beam xml:id="beam-689">
+                    <note pname="e" oct="5" dur="16" xml:id="note-690"/>
+                    <note pname="d" oct="5" dur="16" slur="i1" xml:id="note-691"/>
+                    <note pname="e" oct="5" dur="16" slur="m1" xml:id="note-692"/>
+                    <note pname="g" oct="5" dur="16" slur="t1" xml:id="note-693"/>
+                  </beam>
+                  <beam xml:id="beam-694">
+                    <note pname="f" oct="5" dur="16" slur="i2" xml:id="note-695"/>
+                    <note pname="a" oct="5" dur="16" slur="t2" xml:id="note-696"/>
+                    <note pname="a" oct="5" dur="16" slur="i3" xml:id="note-697"/>
+                    <note pname="g" oct="5" dur="16" slur="t3" xml:id="note-698"/>
+                  </beam>
+                  <beam xml:id="beam-699">
+                    <note pname="g" oct="5" dur="16" slur="i4" xml:id="note-700"/>
+                    <note pname="f" oct="5" dur="16" slur="t4" xml:id="note-701"/>
+                    <note pname="f" oct="5" dur="16" slur="i5" xml:id="note-702"/>
+                    <note pname="g" oct="5" dur="16" slur="t5" xml:id="note-703"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-704">
+                <layer xml:id="layer-705">
+                  <beam xml:id="beam-706">
+                    <note pname="g" oct="4" dur="8" dots="1" xml:id="note-707"/>
+                    <note pname="e" oct="5" dur="16" xml:id="note-708"/>
+                  </beam>
+                  <note pname="c" oct="5" dur="8" slur="i1" grace="unknown" stem.dir="up" xml:id="note-709"/>
+                  <note pname="b" oct="4" dots="1" dur="4" xml:id="note-710"/>
+                  <note pname="c" oct="5" dur="8" xml:id="note-711"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-712">
+                <layer xml:id="layer-713">
+                  <beam xml:id="beam-714">
+                    <note pname="c" oct="3" dur="8" xml:id="note-715"/>
+                    <note pname="c" oct="3" dur="8" xml:id="note-716"/>
+                    <note pname="d" oct="3" dur="8" xml:id="m15_s3_e3"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-717"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-718"/>
+                    <note pname="d" oct="3" dur="8" xml:id="m15_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="3" startid="#m15_s3_e3" endid="#m15_s3_e6" curvedir="below" xml:id="slur-719"/>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-720">
+                <fb xml:id="fb-721">
+                  <f xml:id="f-722">6♮</f>
+                </fb>
+              </harm>
+              <trill staff="2" place="above" tstamp="2" xml:id="trill-723"/>
+            </measure>
+            <measure n="16" xml:id="m16">
+              <staff n="1" xml:id="staff-724">
+                <layer xml:id="layer-725">
+                  <beam xml:id="beam-726">
+                    <note pname="g" oct="5" dur="16" xml:id="note-727"/>
+                    <note pname="f" oct="5" dur="16" accid="s" slur="i1" xml:id="note-728"/>
+                    <note pname="g" oct="5" dur="16" slur="m1" xml:id="note-729"/>
+                    <note pname="c" oct="6" dur="16" slur="t1" xml:id="note-730"/>
+                  </beam>
+                  <note pname="f" accid="n" oct="5" dur="8" grace="unknown" stem.dir="up" xml:id="note-731"/>
+                  <note pname="e" oct="5" dur="2" xml:id="note-732"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-733">
+                <layer xml:id="layer-734">
+                  <note pname="c" oct="5" dur="4" dots="1" xml:id="note-735"/>
+                  <beam xml:id="beam-736">
+                    <note pname="b" oct="4" dur="16" accid="n" xml:id="m16_s2_e2"/>
+                    <note pname="a" oct="4" dur="16" accid="n" xml:id="note-737"/>
+                  </beam>
+                  <note pname="d" oct="5" dur="16" grace="unknown" stem.dir="up" xml:id="note-738"/>
+                  <beam xml:id="beam-739">
+                    <note pname="c" oct="5" dur="8" xml:id="note-740"/>
+                    <note pname="b" oct="4" dur="16" xml:id="note-741"/>
+                    <note pname="a" oct="4" dur="16" xml:id="m16_s2_e7"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-742">
+                <layer xml:id="layer-743">
+                  <beam xml:id="beam-744">
+                    <note pname="e" oct="3" dur="8" xml:id="note-745"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-746"/>
+                    <note pname="f" oct="2" dur="8" accid="s" xml:id="m16_s3_e3"/>
+                    <note pname="f" oct="2" dur="8" xml:id="note-747"/>
+                    <note pname="f" oct="2" dur="8" xml:id="note-748"/>
+                    <note pname="f" oct="2" dur="8" xml:id="m16_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="2" startid="#m16_s2_e2" endid="#m16_s2_e7" curvedir="below" xml:id="slur-749"/>
+              <slur staff="3" startid="#m16_s3_e3" endid="#m16_s3_e6" curvedir="below" xml:id="slur-750"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-751">
+                <fb xml:id="fb-752">
+                  <f xml:id="f-753">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-754">
+                <fb xml:id="fb-755">
+                  <f xml:id="f-756">7</f>
+                  <f xml:id="f-757">5</f>
+                </fb>
+              </harm>
+              <trill staff="1" place="above" tstamp="2" xml:id="trill-758"/>
+            </measure>
+            <measure n="17" xml:id="m17">
+              <staff n="1" xml:id="staff-759">
+                <layer xml:id="layer-760">
+                  <beam xml:id="beam-761">
+                    <note pname="d" oct="5" dur="16" artic="stacc" xml:id="note-762"/>
+                    <note pname="g" oct="4" dur="16" slur="i1" xml:id="note-763"/>
+                    <note pname="b" oct="4" dur="16" slur="m1" accid="n" xml:id="note-764"/>
+                    <note pname="d" oct="5" dur="16" slur="t1" xml:id="note-765"/>
+                  </beam>
+                  <beam xml:id="beam-766">
+                    <note pname="f" oct="5" dur="16" artic="stacc" xml:id="note-767"/>
+                    <note pname="a" oct="5" dur="16" slur="i2" xml:id="note-768"/>
+                    <note pname="g" oct="5" dur="16" slur="m2" xml:id="note-769"/>
+                    <note pname="f" oct="5" dur="16" slur="t2" xml:id="note-770"/>
+                  </beam>
+                  <beam xml:id="beam-771">
+                    <note pname="d" oct="6" dur="16" artic="stacc" xml:id="note-772"/>
+                    <note pname="a" oct="5" dur="16" slur="i3" xml:id="note-773"/>
+                    <note pname="g" oct="5" dur="16" slur="m3" xml:id="note-774"/>
+                    <note pname="f" oct="5" dur="16" slur="t3" xml:id="note-775"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-776">
+                <layer xml:id="layer-777">
+                  <note pname="b" oct="4" dur="4" accid="n" xml:id="note-778"/>
+                  <rest dur="4" xml:id="rest-779"/>
+                  <rest dur="4" xml:id="rest-780"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-781">
+                <layer xml:id="layer-782">
+                  <beam xml:id="beam-783">
+                    <note pname="g" oct="2" dur="8" xml:id="note-784"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-785"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-786"/>
+                    <note pname="b" oct="3" dur="8" accid="n" xml:id="note-787"/>
+                    <note pname="g" oct="2" dur="8" xml:id="note-788"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-789"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-790">
+                <fb xml:id="fb-791">
+                  <f xml:id="f-792">♮</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-793">
+                <fb xml:id="fb-794">
+                  <f xml:id="f-795">6</f>
+                  <f xml:id="f-796">♮</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-797">
+                <fb xml:id="fb-798">
+                  <f xml:id="f-799">7</f>
+                  <f xml:id="f-800">♮</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="18" xml:id="m18">
+              <staff n="1" xml:id="staff-801">
+                <layer xml:id="layer-802">
+                  <beam xml:id="beam-803">
+                    <note pname="e" oct="5" dur="8" dots="1" xml:id="note-804"/>
+                    <note pname="b" oct="5" dur="16" accid="f" xml:id="note-805"/>
+                  </beam>
+                  <note pname="f" oct="5" dur="8" grace="unknown" stem.dir="up" slur="i1" xml:id="note-806"/>
+                  <note pname="e" oct="5" dur="4" dots="1" slur="t1" accid="n" xml:id="note-807"/>
+                  <note pname="g" oct="5" dur="8" tie="i" xml:id="note-808"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-809">
+                <layer xml:id="layer-810">
+                  <rest dur="16" xml:id="rest-811"/>
+                  <beam xml:id="beam-812">
+                    <note pname="c" oct="4" dur="16" slur="i1" xml:id="note-813"/>
+                    <note pname="e" oct="4" dur="16" slur="m1" xml:id="note-814"/>
+                    <note pname="g" oct="4" dur="16" slur="t1" xml:id="note-815"/>
+                  </beam>
+                  <beam xml:id="beam-816">
+                    <note pname="b" oct="4" dur="16" accid="f" artic="stacc" xml:id="note-817"/>
+                    <note pname="d" oct="5" dur="16" accid="f" slur="i2" xml:id="note-818"/>
+                    <note pname="c" oct="5" dur="16" slur="m2" xml:id="note-819"/>
+                    <note pname="b" oct="4" dur="16" slur="t2" xml:id="note-820"/>
+                  </beam>
+                  <beam xml:id="beam-821">
+                    <note pname="g" oct="5" dur="16" artic="stacc" xml:id="note-822"/>
+                    <note pname="d" oct="5" dur="16" slur="i3" xml:id="note-823"/>
+                    <note pname="c" oct="5" dur="16" slur="m3" xml:id="note-824"/>
+                    <note pname="b" oct="4" dur="16" slur="t3" xml:id="note-825"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-826">
+                <layer xml:id="layer-827">
+                  <beam xml:id="beam-828">
+                    <note pname="c" oct="3" dur="8" xml:id="note-829"/>
+                    <note pname="c" oct="4" dur="8" xml:id="note-830"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-831"/>
+                    <note pname="e" oct="3" dur="8" accid="n" xml:id="note-832"/>
+                    <note pname="c" oct="3" dur="8" xml:id="note-833"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-834"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-835">
+                <fb xml:id="fb-836">
+                  <f xml:id="f-837">6♮</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-838">
+                <fb xml:id="fb-839">
+                  <f xml:id="f-840">7</f>
+                  <f xml:id="f-841">♮</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="19" xml:id="m19">
+              <staff n="1" xml:id="staff-842">
+                <layer xml:id="layer-843">
+                  <beam xml:id="beam-844">
+                    <note pname="g" oct="5" dur="16" tie="t" xml:id="note-845"/>
+                    <note pname="f" oct="4" dur="16" slur="i1" xml:id="note-846"/>
+                    <note pname="a" oct="4" dur="16" slur="m1" xml:id="note-847"/>
+                    <note pname="c" oct="5" dur="16" slur="t1" xml:id="note-848"/>
+                  </beam>
+                  <beam xml:id="beam-849">
+                    <note pname="e" oct="5" dur="16" accid="f" artic="stacc" xml:id="note-850"/>
+                    <note pname="g" oct="5" dur="16" slur="i2" xml:id="note-851"/>
+                    <note pname="f" oct="5" dur="16" slur="m2" xml:id="note-852"/>
+                    <note pname="e" oct="5" dur="16" slur="t2" xml:id="note-853"/>
+                  </beam>
+                  <beam xml:id="beam-854">
+                    <note pname="c" oct="6" dur="16" artic="stacc" xml:id="note-855"/>
+                    <note pname="g" oct="5" dur="16" slur="i3" xml:id="note-856"/>
+                    <note pname="f" oct="5" dur="16" slur="m3" xml:id="note-857"/>
+                    <note pname="e" oct="5" dur="16" slur="t3" xml:id="note-858"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-859">
+                <layer xml:id="layer-860">
+                  <beam xml:id="beam-861">
+                    <note pname="a" oct="4" dur="8" dots="1" xml:id="note-862"/>
+                    <note pname="e" oct="5" dur="16" xml:id="note-863"/>
+                  </beam>
+                  <note pname="b" oct="4" dur="8" grace="unknown" stem.dir="up" slur="i1" xml:id="note-864"/>
+                  <note pname="a" oct="4" dur="4" accid="n" slur="t1" xml:id="note-865"/>
+                  <rest dur="8" xml:id="rest-866"/>
+                  <note pname="c" oct="5" dur="8" tie="i" xml:id="note-867"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-868">
+                <layer xml:id="layer-869">
+                  <beam xml:id="beam-870">
+                    <note pname="f" oct="2" dur="8" xml:id="note-871"/>
+                    <note pname="f" oct="3" dur="8" xml:id="note-872"/>
+                    <note pname="c" oct="3" dur="8" xml:id="note-873"/>
+                    <note pname="a" oct="2" dur="8" accid="n" xml:id="note-874"/>
+                    <note pname="f" oct="2" dur="8" xml:id="note-875"/>
+                    <note pname="a" oct="2" dur="8" xml:id="note-876"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-877">
+                <fb xml:id="fb-878">
+                  <f xml:id="f-879">9</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="1.5" xml:id="harm-880">
+                <fb xml:id="fb-881">
+                  <f xml:id="f-882">8</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-883">
+                <fb xml:id="fb-884">
+                  <f xml:id="f-885">6♮</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-886">
+                <fb xml:id="fb-887">
+                  <f xml:id="f-888">7♭</f>
+                  <f xml:id="f-889">♮</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="20" xml:id="m20">
+              <staff n="1" xml:id="staff-890">
+                <layer xml:id="layer-891">
+                  <beam xml:id="beam-892">
+                    <note pname="d" oct="5" dur="8" dots="1" xml:id="note-893"/>
+                    <note pname="a" oct="5" dur="16" accid="f" xml:id="note-894"/>
+                  </beam>
+                  <note pname="f" oct="5" dur="8" grace="unknown" stem.dir="up" slur="i1" xml:id="note-895"/>
+                  <note pname="d" oct="5" dur="2" slur="t1" tie="i" xml:id="note-896"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-897">
+                <layer xml:id="layer-898">
+                  <beam xml:id="beam-899">
+                    <note pname="c" oct="5" dur="16" tie="t" xml:id="note-900"/>
+                    <note pname="b" oct="3" dur="16" slur="i1" xml:id="note-901"/>
+                    <note pname="d" oct="4" dur="16" slur="m1" xml:id="note-902"/>
+                    <note pname="f" oct="4" dur="16" slur="t1" xml:id="note-903"/>
+                  </beam>
+                  <beam xml:id="beam-904">
+                    <note pname="a" oct="5" dur="16" accid="f" xml:id="note-905"/>
+                    <note pname="c" oct="5" dur="16" slur="i2" xml:id="note-906"/>
+                    <note pname="b" oct="4" dur="16" slur="m2" xml:id="note-907"/>
+                    <note pname="a" oct="4" dur="16" slur="t2" xml:id="note-908"/>
+                  </beam>
+                  <beam xml:id="beam-909">
+                    <note pname="f" oct="5" dur="16" artic="stacc" xml:id="note-910"/>
+                    <note pname="c" oct="5" dur="16" slur="i3" xml:id="note-911"/>
+                    <note pname="b" oct="4" dur="16" slur="m3" xml:id="note-912"/>
+                    <note pname="a" oct="4" dur="16" slur="t3" xml:id="note-913"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-914">
+                <layer xml:id="layer-915">
+                  <beam xml:id="beam-916">
+                    <note pname="b" oct="2" dur="8" xml:id="note-917"/>
+                    <note pname="b" oct="3" dur="8" xml:id="note-918"/>
+                    <note pname="f" oct="3" dur="8" xml:id="note-919"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-920"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-921"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-922"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-923">
+                <fb xml:id="fb-924">
+                  <f xml:id="f-925">9</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="1.5" xml:id="harm-926">
+                <fb xml:id="fb-927">
+                  <f xml:id="f-928">8</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-929">
+                <fb xml:id="fb-930">
+                  <f xml:id="f-931">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-932">
+                <fb xml:id="fb-933">
+                  <f xml:id="f-934">7</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="21" xml:id="m21">
+              <staff n="1" xml:id="staff-935">
+                <layer xml:id="layer-936">
+                  <beam xml:id="beam-937">
+                    <note pname="d" oct="5" dur="8" dots="1" tie="t" xml:id="note-938"/>
+                    <note pname="f" oct="5" dur="16" xml:id="note-939"/>
+                  </beam>
+                  <note pname="c" oct="5" dur="8" grace="unknown" stem.dir="up" slur="i1" xml:id="note-940"/>
+                  <note pname="b" oct="5" dur="4" dots="1" accid="n" slur="t1" xml:id="note-941"/>
+                  <note pname="a" oct="5" dur="8" xml:id="note-942"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-943">
+                <layer xml:id="layer-944">
+                  <beam xml:id="beam-945">
+                    <note pname="g" oct="4" dur="8" dots="1" xml:id="note-946"/>
+                    <note pname="a" oct="4" dur="16" xml:id="note-947"/>
+                  </beam>
+                  <note pname="e" oct="4" dur="8" grace="unknown" stem.dir="up" slur="i1" xml:id="note-948"/>
+                  <note pname="d" oct="4" dur="4" dots="1" slur="t1" xml:id="note-949"/>
+                  <note pname="b" oct="4" dur="8" accid="n" xml:id="note-950"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-951">
+                <layer xml:id="layer-952">
+                  <beam xml:id="beam-953">
+                    <note pname="b" oct="2" dur="16" accid="n" xml:id="note-954"/>
+                    <note pname="g" oct="2" dur="16" xml:id="note-955"/>
+                    <note pname="b" oct="2" dur="16" xml:id="note-956"/>
+                    <note pname="d" oct="3" dur="16" xml:id="note-957"/>
+                  </beam>
+                  <beam xml:id="beam-958">
+                    <note pname="f" oct="3" dur="16" slur="i1" xml:id="note-959"/>
+                    <note pname="a" oct="3" dur="16" slur="t1" xml:id="note-960"/>
+                    <note pname="a" oct="3" dur="16" slur="i2" xml:id="note-961"/>
+                    <note pname="g" oct="3" dur="16" slur="t2" xml:id="note-962"/>
+                  </beam>
+                  <beam xml:id="beam-963">
+                    <note pname="g" oct="3" dur="16" slur="i3" xml:id="note-964"/>
+                    <note pname="f" oct="3" dur="16" slur="t3" xml:id="note-965"/>
+                    <note pname="f" oct="3" dur="16" slur="i4" xml:id="note-966"/>
+                    <note pname="e" oct="3" dur="16" slur="t4" xml:id="note-967"/>
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="22" xml:id="m22">
+              <staff n="1" xml:id="staff-968">
+                <layer xml:id="layer-969">
+                  <beam xml:id="beam-970">
+                    <note pname="g" oct="5" dur="8" dots="1" xml:id="note-971"/>
+                    <note pname="c" oct="5" dur="16" xml:id="note-972"/>
+                  </beam>
+                  <note pname="c" oct="5" dur="4" slur="i1" xml:id="note-973"/>
+                  <beam xml:id="beam-974">
+                    <note pname="b" oct="4" dur="8" dots="1" accid="n" xml:id="m22_s1_e4"/>
+                    <note pname="c" oct="5" dur="16" xml:id="note-975"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-976">
+                <layer xml:id="layer-977">
+                  <beam xml:id="beam-978">
+                    <note pname="c" oct="5" dur="8" dots="1" xml:id="note-979"/>
+                    <note pname="a" oct="4" dur="16" xml:id="note-980"/>
+                  </beam>
+                  <note pname="e" oct="4" dur="4" slur="i1" xml:id="note-981"/>
+                  <beam xml:id="beam-982">
+                    <note pname="d" oct="4" dur="8" dots="1" accid="n" xml:id="m22_s2_e4"/>
+                    <note pname="c" oct="4" dur="16" xml:id="note-983"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-984">
+                <layer xml:id="layer-985">
+                  <beam xml:id="beam-986">
+                    <note pname="e" oct="3" dur="8" xml:id="m22_s3_e1"/>
+                    <note pname="f" oct="3" dur="8" xml:id="note-987"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-988"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-989"/>
+                    <note pname="g" oct="2" dur="8" xml:id="note-990"/>
+                    <note pname="g" oct="2" dur="8" xml:id="m22_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <trill staff="1" startid="#m22_s1_e4" xml:id="trill-991"/>
+              <trill staff="2" startid="#m22_s2_e4" xml:id="trill-992"/>
+              <slur staff="3" startid="#m22_s3_e1" endid="#m22_s3_e6" curvedir="below" xml:id="slur-993"/>
+            </measure>
+            <measure n="23" xml:id="m23">
+              <staff n="1" xml:id="staff-994">
+                <layer xml:id="layer-995">
+                  <note pname="c" oct="5" dur="4" xml:id="note-996"/>
+                  <rest dur="8" xml:id="rest-997"/>
+                  <note pname="c" oct="5" dur="8" xml:id="note-998"/>
+                  <note pname="d" oct="5" dur="8" grace="unknown" stem.dir="up" accid="f" slur="i1" xml:id="note-999"/>
+                  <beam xml:id="beam-1000">
+                    <note pname="c" dur="8" oct="5" dots="1" xml:id="m23_s1_e5"/>
+                    <note pname="b" oct="4" dur="32" accid="f" xml:id="note-1001"/>
+                    <note pname="c" oct="5" dur="32" xml:id="note-1002"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1003">
+                <layer xml:id="layer-1004">
+                  <beam xml:id="beam-1005">
+                    <note pname="c" oct="4" dur="16" xml:id="m23_s2_e1"/>
+                    <note pname="e" oct="4" dur="16" xml:id="note-1006"/>
+                    <note pname="g" oct="4" dur="16" xml:id="note-1007"/>
+                    <note pname="c" oct="5" dur="16" xml:id="m23_s2_e4"/>
+                  </beam>
+                  <beam xml:id="beam-1008">
+                    <note pname="f" oct="5" dur="16" slur="i1" xml:id="note-1009"/>
+                    <note pname="a" oct="5" dur="16" slur="t1" xml:id="note-1010"/>
+                    <note pname="a" oct="5" dur="16" slur="i2" xml:id="note-1011"/>
+                    <note pname="g" oct="5" dur="16" slur="t2" xml:id="note-1012"/>
+                  </beam>
+                  <beam xml:id="beam-1013">
+                    <note pname="g" oct="5" dur="16" slur="i3" xml:id="note-1014"/>
+                    <note pname="f" oct="5" dur="16" slur="t3" xml:id="note-1015"/>
+                    <note pname="f" oct="5" dur="16" slur="i4" xml:id="note-1016"/>
+                    <note pname="e" oct="5" dur="16" accid="n" slur="t4" xml:id="note-1017"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1018">
+                <layer xml:id="layer-1019">
+                  <beam xml:id="beam-1020">
+                    <note pname="a" oct="2" dur="8" xml:id="m23_s3_e1"/>
+                    <note pname="a" oct="2" dur="8" xml:id="note-1021"/>
+                    <note pname="a" oct="2" dur="8" xml:id="note-1022"/>
+                    <note pname="a" oct="2" dur="8" xml:id="note-1023"/>
+                    <note pname="a" oct="2" dur="8" xml:id="note-1024"/>
+                    <note pname="a" oct="2" dur="8" xml:id="m23_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="1" startid="#m23_s2_e1" endid="#m23_s2_e4" curvedir="below" xml:id="slur-1025"/>
+              <slur staff="3" startid="#m23_s3_e1" endid="#m23_s3_e6" curvedir="below" xml:id="slur-1026"/>
+              <trill staff="1" startid="#m23_s1_e5" xml:id="trill-1027"/>
+            </measure>
+            <measure n="24" xml:id="m24">
+              <staff n="1" xml:id="staff-1028">
+                <layer xml:id="layer-1029">
+                  <beam xml:id="beam-1030">
+                    <note pname="d" oct="5" dur="16" accid="f" xml:id="m24_s1_e1"/>
+                    <note pname="b" oct="4" dur="16" xml:id="note-1031"/>
+                    <note pname="e" oct="4" dur="16" accid="n" xml:id="note-1032"/>
+                    <note pname="g" oct="5" dur="16" xml:id="m24_s1_e4"/>
+                  </beam>
+                  <beam xml:id="beam-1033">
+                    <note pname="b" oct="5" dur="16" slur="i1" xml:id="note-1034"/>
+                    <note pname="d" oct="6" dur="16" slur="t1" xml:id="note-1035"/>
+                    <note pname="d" oct="6" dur="16" slur="i2" xml:id="note-1036"/>
+                    <note pname="c" oct="6" dur="16" slur="t2" xml:id="note-1037"/>
+                  </beam>
+                  <beam xml:id="beam-1038">
+                    <note pname="c" oct="6" dur="16" slur="i3" xml:id="note-1039"/>
+                    <note pname="b" oct="5" dur="16" slur="t3" xml:id="note-1040"/>
+                    <note pname="b" oct="5" dur="16" slur="i4" xml:id="note-1041"/>
+                    <note pname="a" oct="5" dur="16" slur="t4" xml:id="note-1042"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1043">
+                <layer xml:id="layer-1044">
+                  <note pname="e" oct="5" dur="4" accid="n" xml:id="note-1045"/>
+                  <rest dur="8" xml:id="rest-1046"/>
+                  <note pname="e" oct="4" dur="8" accid="n" xml:id="note-1047"/>
+                  <beam xml:id="beam-1048">
+                    <note pname="e" oct="4" dur="8" dots="1" xml:id="m24_s2_e4"/>
+                    <note pname="d" oct="4" dur="32" xml:id="note-1049"/>
+                    <note pname="e" oct="4" dur="32" xml:id="note-1050"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1051">
+                <layer xml:id="layer-1052">
+                  <beam xml:id="beam-1053">
+                    <note pname="g" oct="2" dur="8" xml:id="m24_s3_e1"/>
+                    <note pname="g" oct="2" dur="8" xml:id="note-1054"/>
+                    <note pname="g" oct="2" dur="8" xml:id="note-1055"/>
+                    <note pname="g" oct="2" dur="8" xml:id="note-1056"/>
+                    <note pname="g" oct="2" dur="8" xml:id="note-1057"/>
+                    <note pname="g" oct="2" dur="8" xml:id="m24_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="1" startid="#m24_s1_e1" endid="#m24_s1_e4" curvedir="above" xml:id="slur-1058"/>
+              <trill staff="2" startid="#m24_s2_e4" xml:id="trill-1059"/>
+              <slur staff="3" startid="#m24_s3_e6" endid="#m24_s3_e6" xml:id="slur-1060"/>
+            </measure>
+            <measure n="25" xml:id="m25">
+              <staff n="1" xml:id="staff-1061">
+                <layer xml:id="layer-1062">
+                  <beam xml:id="beam-1063">
+                    <note pname="e" oct="5" dur="8" xml:id="note-1064"/>
+                    <note pname="f" oct="5" dur="32" xml:id="m25_s1_e2"/>
+                    <note pname="e" oct="5" dur="32" xml:id="note-1065"/>
+                    <note pname="d" oct="5" dur="32" xml:id="note-1066"/>
+                    <note pname="e" oct="5" dur="32" xml:id="m25_s1_e5"/>
+                  </beam>
+                  <note pname="e" oct="5" dur="4" dots="1" xml:id="m25_s1_e6"/>
+                  <note pname="d" oct="5" dur="8" xml:id="note-1067"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1068">
+                <layer xml:id="layer-1069">
+                  <beam xml:id="beam-1070">
+                    <note pname="d" oct="5" dur="8" tie="t" xml:id="m25_s2_e1"/>
+                    <note pname="d" oct="5" dur="32" xml:id="m25_s2_e2"/>
+                    <note pname="c" oct="5" dur="32" xml:id="note-1071"/>
+                    <note pname="b" oct="4" dur="32" accid="n" xml:id="note-1072"/>
+                    <note pname="c" oct="5" dur="32" xml:id="m25_s2_e5"/>
+                  </beam>
+                  <note pname="c" oct="5" dur="4" dots="1" xml:id="m25_s2_e6"/>
+                  <note pname="b" oct="4" dur="8" accid="n" xml:id="note-1073"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1074">
+                <layer xml:id="layer-1075">
+                  <beam xml:id="beam-1076">
+                    <note pname="c" oct="3" dots="1" dur="8" xml:id="note-1077"/>
+                    <note pname="c" oct="4" dur="16" xml:id="note-1078"/>
+                  </beam>
+                  <note pname="g" oct="3" dur="8" slur="i1" grace="unknown" stem.dir="up" xml:id="note-1079"/>
+                  <note pname="f" oct="3" dur="4" slur="t1" accid="s" dots="1" xml:id="note-1080"/>
+                  <note pname="g" oct="3" dur="8" xml:id="note-1081"/>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-1082">
+                <fb xml:id="fb-1083">
+                  <f xml:id="f-1084">7</f>
+                  <f xml:id="f-1085">5</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3.5" xml:id="harm-1086">
+                <fb xml:id="fb-1087">
+                  <f xml:id="f-1088">♮</f>
+                </fb>
+              </harm>
+              <trill staff="1" place="above" startid="#m25_s1_e6" xml:id="trill-1089"/>
+              <trill staff="2" place="above" startid="#m25_s2_e6" xml:id="trill-1090"/>
+              <tie staff="2" startid="#m25_s2_e1" endid="#m25_s2_e2" curvedir="above" xml:id="tie-1091"/>
+              <slur staff="1" startid="#m25_s1_e2" endid="#m25_s1_e5" curvedir="above" xml:id="slur-1092"/>
+              <slur staff="2" startid="#m25_s2_e2" endid="#m25_s2_e5" curvedir="above" xml:id="slur-1093"/>
+            </measure>
+            <measure n="26" xml:id="m26">
+              <staff n="1" xml:id="staff-1094">
+                <layer xml:id="layer-1095">
+                  <beam xml:id="beam-1096">
+                    <note pname="d" oct="5" dur="16" slur="i1" xml:id="note-1097"/>
+                    <note pname="f" oct="4" dur="16" slur="t1" xml:id="note-1098"/>
+                    <note pname="g" oct="4" dur="8" artic="stacc" xml:id="note-1099"/>
+                  </beam>
+                  <rest dur="8" xml:id="rest-1100"/>
+                  <note pname="b" oct="4" dur="8" accid="n" xml:id="note-1101"/>
+                  <note pname="b" oct="4" dur="8" dots="1" xml:id="m26_s1_e6"/>
+                  <beam xml:id="beam-1102">
+                    <note pname="a" oct="4" dur="32" accid="n" xml:id="note-1103"/>
+                    <note pname="b" oct="4" dur="32" xml:id="note-1104"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1105">
+                <layer xml:id="layer-1106">
+                  <beam xml:id="beam-1107">
+                    <note pname="b" oct="4" dur="16" accid="n" xml:id="note-1108"/>
+                    <note pname="g" oct="4" dur="16" slur="i1" xml:id="note-1109"/>
+                    <note pname="b" oct="4" dur="16" slur="m1" xml:id="note-1110"/>
+                    <note pname="d" oct="5" dur="16" slur="t1" xml:id="note-1111"/>
+                  </beam>
+                  <beam xml:id="beam-1112">
+                    <note pname="f" oct="5" dur="16" slur="i2" xml:id="note-1113"/>
+                    <note pname="a" oct="5" dur="16" slur="t2" xml:id="note-1114"/>
+                    <note pname="a" oct="5" dur="16" slur="i3" xml:id="note-1115"/>
+                    <note pname="g" oct="5" dur="16" slur="t3" xml:id="note-1116"/>
+                  </beam>
+                  <beam xml:id="beam-1117">
+                    <note pname="g" oct="5" dur="16" slur="i4" xml:id="note-1118"/>
+                    <note pname="f" oct="5" dur="16" slur="t4" xml:id="note-1119"/>
+                    <note pname="f" oct="5" dur="16" slur="i5" xml:id="note-1120"/>
+                    <note pname="e" oct="5" dur="16" slur="t5" xml:id="note-1121"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1122">
+                <layer xml:id="layer-1123">
+                  <note pname="g" oct="3" dur="4" xml:id="note-1124"/>
+                  <rest dur="8" xml:id="rest-1125"/>
+                  <beam xml:id="beam-1126">
+                    <note pname="g" oct="2" dur="8" xml:id="note-1127"/>
+                    <note pname="g" oct="2" dur="8" xml:id="note-1128"/>
+                    <note pname="g" oct="2" dur="8" xml:id="note-1129"/>
+                  </beam>
+                </layer>
+              </staff>
+              <trill staff="1" startid="#m26_s1_e6" xml:id="trill-1130"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1131">
+                <fb xml:id="fb-1132">
+                  <f xml:id="f-1133">♮</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" extender="true" xml:id="harm-1134"/>
+            </measure>
+            <measure n="27" xml:id="m27">
+              <staff n="1" xml:id="staff-1135">
+                <layer xml:id="layer-1136">
+                  <beam xml:id="beam-1137">
+                    <note pname="c" oct="5" dur="16" xml:id="note-1138"/>
+                    <note pname="d" oct="4" dur="16" slur="i1" xml:id="note-1139"/>
+                    <note pname="e" oct="4" dur="16" slur="m1" xml:id="note-1140"/>
+                    <note pname="g" oct="4" dur="16" slur="t1" xml:id="note-1141"/>
+                  </beam>
+                  <beam xml:id="beam-1142">
+                    <note pname="c" oct="5" dur="16" slur="i2" xml:id="note-1143"/>
+                    <note pname="e" oct="5" dur="16" slur="t2" xml:id="note-1144"/>
+                    <note pname="e" oct="5" dur="16" slur="i3" xml:id="note-1145"/>
+                    <note pname="d" oct="5" dur="16" slur="t3" xml:id="note-1146"/>
+                  </beam>
+                  <beam xml:id="beam-1147">
+                    <note pname="d" oct="5" dur="16" slur="i4" xml:id="note-1148"/>
+                    <note pname="c" oct="5" dur="16" slur="t4" xml:id="note-1149"/>
+                    <note pname="c" oct="5" dur="16" slur="i5" xml:id="note-1150"/>
+                    <note pname="b" oct="4" dur="16" accid="s" slur="t5" xml:id="note-1151"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1152">
+                <layer xml:id="layer-1153">
+                  <beam xml:id="beam-1154">
+                    <note pname="e" oct="5" dur="16" slur="i1" xml:id="note-1155"/>
+                    <note pname="b" oct="4" dur="16" accid="n" slur="t1" xml:id="note-1156"/>
+                    <note pname="c" oct="5" dur="8" artic="stacc" xml:id="note-1157"/>
+                  </beam>
+                  <rest dur="8" xml:id="rest-1158"/>
+                  <note pname="f" oct="4" dur="8" accid="s" xml:id="m27_s2_e5"/>
+                  <beam xml:id="beam-1159">
+                    <note pname="f" oct="4" dur="8" dots="1" xml:id="m27_s2_e6"/>
+                    <note pname="e" oct="4" dur="32" accid="n" xml:id="note-1160"/>
+                    <note pname="f" oct="4" dur="32" xml:id="note-1161"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1162">
+                <layer xml:id="layer-1163">
+                  <note pname="g" oct="2" dur="4" xml:id="note-1164"/>
+                  <rest dur="8" xml:id="rest-1165"/>
+                  <beam xml:id="beam-1166">
+                    <note pname="g" oct="3" dur="8" xml:id="note-1167"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-1168"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-1169"/>
+                  </beam>
+                </layer>
+              </staff>
+              <trill staff="2" place="below" tstamp="3" startid="#m27_s2_e6" xml:id="trill-1170"/>
+              <dynam staff="2" place="below" tstamp="2.5" startto="2.5" startid="#m27_s2_e6" xml:id="dynam-1171">piano</dynam>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1172">
+                <fb xml:id="fb-1173">
+                  <f xml:id="f-1174">6&gt;</f>
+                  <f xml:id="f-1175">4</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2.5" extender="true" xml:id="harm-1176">
+                <fb xml:id="fb-1177">
+                  <f xml:id="f-1178">7</f>
+                  <f xml:id="f-1179">4</f>
+                  <f xml:id="f-1180">2</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="28" xml:id="m28">
+              <staff n="1" xml:id="staff-1181">
+                <layer xml:id="layer-1182">
+                  <note pname="b" oct="4" dur="2" accid="n" xml:id="note-1183"/>
+                  <rest dur="4" xml:id="rest-1184"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1185">
+                <layer xml:id="layer-1186">
+                  <note pname="g" oct="4" dur="2" xml:id="note-1187"/>
+                  <rest dur="4" xml:id="rest-1188"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1189">
+                <layer xml:id="layer-1190">
+                  <beam xml:id="beam-1191">
+                    <note pname="g" oct="3" dur="16" xml:id="note-1192"/>
+                    <note pname="g" oct="2" dur="16" slur="i2" xml:id="note-1193"/>
+                    <note pname="b" oct="3" dur="16" accid="n" slur="m1" xml:id="note-1194"/>
+                    <note pname="d" oct="3" dur="16" slur="t1" xml:id="note-1195"/>
+                  </beam>
+                  <beam xml:id="beam-1196">
+                    <note pname="f" oct="3" dur="16" slur="i2" xml:id="note-1197"/>
+                    <note pname="a" oct="3" dur="16" slur="t2" xml:id="note-1198"/>
+                    <note pname="a" oct="3" dur="16" slur="i3" xml:id="note-1199"/>
+                    <note pname="g" oct="3" dur="16" slur="t3" xml:id="note-1200"/>
+                  </beam>
+                  <beam xml:id="beam-1201">
+                    <note pname="g" oct="3" dur="16" slur="i4" xml:id="note-1202"/>
+                    <note pname="f" oct="3" dur="16" slur="t4" xml:id="note-1203"/>
+                    <note pname="f" oct="3" dur="16" slur="i5" xml:id="note-1204"/>
+                    <note pname="e" oct="3" dur="16" accid="n" slur="t5" xml:id="note-1205"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1206">
+                <fb xml:id="fb-1207">
+                  <f xml:id="f-1208">8</f>
+                  <f xml:id="f-1209">5</f>
+                  <f xml:id="f-1210">♮</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1211">
+                <fb xml:id="fb-1212">
+                  <f xml:id="f-1213">4♮</f>
+                  <f xml:id="f-1214">2</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-1215">
+                <fb xml:id="fb-1216">
+                  <f xml:id="f-1217">♮</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="29" xml:id="m29">
+              <staff n="1" xml:id="staff-1218">
+                <layer xml:id="layer-1219">
+                  <beam xml:id="beam-1220">
+                    <note pname="c" oct="5" dur="8" dots="1" xml:id="note-1221"/>
+                    <note pname="b" oct="5" dur="16" accid="f" xml:id="note-1222"/>
+                  </beam>
+                  <note pname="a" oct="5" dur="8" grace="unknown" slur="i1" xml:id="note-1223"/>
+                  <note pname="g" oct="5" dur="4" dots="1" slur="t1" xml:id="m28_s1_e4"/>
+                  <note pname="a" oct="5" dur="8" xml:id="note-1224"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1225">
+                <layer xml:id="layer-1226">
+                  <mRest xml:id="mRest-1227"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1228">
+                <layer xml:id="layer-1229">
+                  <beam xml:id="beam-1230">
+                    <note pname="e" oct="3" dur="16" accid="n" xml:id="note-1231"/>
+                    <note pname="c" oct="3" dur="16" xml:id="note-1232"/>
+                    <note pname="e" oct="3" dur="16" xml:id="note-1233"/>
+                    <note pname="g" oct="3" dur="16" xml:id="note-1234"/>
+                  </beam>
+                  <beam xml:id="beam-1235">
+                    <note pname="b" oct="3" dur="16" slur="i1" xml:id="note-1236"/>
+                    <note pname="d" oct="4" dur="16" accid="f" slur="t1" xml:id="note-1237"/>
+                    <note pname="d" oct="4" dur="16" slur="i2" xml:id="note-1238"/>
+                    <note pname="c" oct="4" dur="16" slur="t2" xml:id="note-1239"/>
+                  </beam>
+                  <beam xml:id="beam-1240">
+                    <note pname="c" oct="4" dur="16" xml:id="note-1241"/>
+                    <note pname="b" oct="3" dur="16" xml:id="note-1242"/>
+                    <note pname="a" oct="3" dur="16" xml:id="note-1243"/>
+                    <note pname="g" oct="3" dur="16" xml:id="note-1244"/>
+                  </beam>
+                </layer>
+              </staff>
+              <trill staff="1" place="above" tstamp="2" startid="#m28_s1_e4" xml:id="trill-1245"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1246">
+                <fb xml:id="fb-1247">
+                  <f xml:id="f-1248">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1249">
+                <fb xml:id="fb-1250">
+                  <f xml:id="f-1251">4♮</f>
+                  <f xml:id="f-1252">2</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" extender="true" xml:id="harm-1253"/>
+              <harm staff="3" place="below" tstamp="3.5" extender="true" xml:id="harm-1254"/>
+            </measure>
+            <measure n="30" xml:id="m30">
+              <staff n="1" xml:id="staff-1255">
+                <layer xml:id="layer-1256">
+                  <note oct="5" pname="a" dur="2" dots="1" xml:id="m29_s1_e1"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1257">
+                <layer xml:id="layer-1258">
+                  <beam xml:id="beam-1259">
+                    <note pname="f" oct="4" dur="8" dots="1" xml:id="note-1260"/>
+                    <note pname="e" oct="5" dur="16" xml:id="note-1261"/>
+                  </beam>
+                  <note pname="d" oct="5" grace="unknown" dur="8" stem.dir="up" slur="i1" xml:id="note-1262"/>
+                  <note pname="c" oct="5" dur="4" dots="1" slur="t1" xml:id="m29_s2_e4"/>
+                  <note pname="d" oct="5" dur="8" xml:id="note-1263"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1264">
+                <layer xml:id="layer-1265">
+                  <beam xml:id="beam-1266">
+                    <note pname="f" oct="3" dur="16" xml:id="note-1267"/>
+                    <note pname="f" oct="2" dur="16" xml:id="note-1268"/>
+                    <note pname="a" oct="2" dur="16" xml:id="note-1269"/>
+                    <note pname="c" oct="3" dur="16" xml:id="note-1270"/>
+                  </beam>
+                  <beam xml:id="beam-1271">
+                    <note pname="e" oct="3" dur="16" accid="f" slur="i1" xml:id="note-1272"/>
+                    <note pname="g" oct="3" dur="16" slur="t1" xml:id="note-1273"/>
+                    <note pname="g" oct="3" dur="16" slur="i2" xml:id="note-1274"/>
+                    <note pname="f" oct="4" dur="16" slur="t2" xml:id="note-1275"/>
+                  </beam>
+                  <beam xml:id="beam-1276">
+                    <note pname="f" oct="3" dur="16" xml:id="note-1277"/>
+                    <note pname="e" oct="3" dur="16" xml:id="note-1278"/>
+                    <note pname="d" oct="3" dur="16" xml:id="note-1279"/>
+                    <note pname="c" oct="3" dur="16" xml:id="note-1280"/>
+                  </beam>
+                </layer>
+              </staff>
+              <trill staff="2" tstamp="2" place="above" startid="#m29_s2_e4" xml:id="trill-1281"/>
+              <slur staff="1" curvedir="above" startid="#m29_s1_e1" endid="#m31_s1_e1" xml:id="slur-1282"/>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1283">
+                <fb xml:id="fb-1284">
+                  <f xml:id="f-1285">4</f>
+                  <f xml:id="f-1286">2</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" extender="true" xml:id="harm-1287"/>
+            </measure>
+            <measure n="31" xml:id="m31">
+              <staff n="1" xml:id="staff-1288">
+                <layer xml:id="layer-1289">
+                  <beam xml:id="beam-1290">
+                    <note pname="a" oct="5" dur="16" xml:id="m31_s1_e1"/>
+                    <note pname="b" oct="4" dur="16" slur="i1" xml:id="note-1291"/>
+                    <note pname="d" oct="5" dur="16" slur="m1" xml:id="note-1292"/>
+                    <note pname="f" oct="5" dur="16" slur="t1" xml:id="note-1293"/>
+                  </beam>
+                  <beam xml:id="beam-1294">
+                    <note pname="a" oct="5" dur="16" slur="i2" xml:id="note-1295"/>
+                    <note pname="c" oct="5" dur="16" slur="t2" xml:id="note-1296"/>
+                    <note pname="c" oct="6" dur="16" slur="i3" xml:id="note-1297"/>
+                    <note pname="b" oct="5" dur="16" slur="t3" xml:id="note-1298"/>
+                  </beam>
+                  <beam xml:id="beam-1299">
+                    <note pname="b" oct="5" dur="16" slur="i4" xml:id="note-1300"/>
+                    <note pname="a" oct="5" dur="16" slur="t4" xml:id="note-1301"/>
+                    <note pname="a" oct="5" dur="16" slur="i5" xml:id="note-1302"/>
+                    <note pname="g" oct="5" dur="16" slur="t5" xml:id="note-1303"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1304">
+                <layer xml:id="layer-1305">
+                  <note pname="d" oct="5" dur="2" dots="1" xml:id="m31_s2_e1"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1306">
+                <layer xml:id="layer-1307">
+                  <beam xml:id="beam-1308">
+                    <note pname="b" oct="2" dur="8" xml:id="note-1309"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-1310"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-1311"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-1312"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-1313"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-1314"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1315">
+                <fb xml:id="fb-1316">
+                  <f xml:id="f-1317">7</f>
+                </fb>
+              </harm>
+              <slur staff="2" startid="#m31_s2_e1" curvedir="above" endid="#m32_s2_e1" xml:id="slur-1318"/>
+            </measure>
+            <measure n="32" xml:id="m32">
+              <staff n="1" xml:id="staff-1319">
+                <layer xml:id="layer-1320">
+                  <note pname="g" oct="5" dur="2" dots="1" xml:id="m32_s1_e1"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1321">
+                <layer xml:id="layer-1322">
+                  <beam xml:id="beam-1323">
+                    <note pname="d" oct="5" dur="16" xml:id="m32_s2_e1"/>
+                    <note pname="e" oct="4" dur="16" slur="i1" xml:id="note-1324"/>
+                    <note pname="g" oct="4" dur="16" slur="m1" xml:id="note-1325"/>
+                    <note pname="b" oct="4" dur="16" slur="t1" xml:id="note-1326"/>
+                  </beam>
+                  <beam xml:id="beam-1327">
+                    <note pname="d" oct="5" dur="16" accid="f" slur="i2" xml:id="note-1328"/>
+                    <note pname="f" oct="5" dur="16" slur="t2" xml:id="note-1329"/>
+                    <note pname="f" oct="5" dur="16" slur="i3" xml:id="note-1330"/>
+                    <note pname="e" oct="5" dur="16" slur="t3" xml:id="note-1331"/>
+                  </beam>
+                  <beam xml:id="beam-1332">
+                    <note pname="e" oct="5" dur="16" slur="i4" xml:id="note-1333"/>
+                    <note pname="d" oct="5" dur="16" slur="t4" xml:id="note-1334"/>
+                    <note pname="d" oct="5" dur="16" slur="i5" xml:id="note-1335"/>
+                    <note pname="c" oct="5" dur="16" slur="t5" xml:id="note-1336"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1337">
+                <layer xml:id="layer-1338">
+                  <beam xml:id="beam-1339">
+                    <note pname="e" oct="3" dur="8" xml:id="note-1340"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-1341"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-1342"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-1343"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-1344"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-1345"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="1" curvedir="above" startid="#m32_s1_e1" endid="#m32_s1_e1" xml:id="slur-1346"/>
+              <slur staff="2" curvedir="above" endid="#m32_s2_e1" startid="#m33_s2_e2" xml:id="slur-1347"/>
+              <harm staff="3" tstamp="1" place="below" xml:id="harm-1348">
+                <fb xml:id="fb-1349">
+                  <f xml:id="f-1350">7</f>
+                </fb>
+              </harm>
+              <harm staff="3" tstamp="2" place="below" xml:id="harm-1351">
+                <fb xml:id="fb-1352">
+                  <f xml:id="f-1353">7♭</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="33" xml:id="m33">
+              <staff n="1" xml:id="staff-1354">
+                <layer xml:id="layer-1355">
+                  <beam xml:id="beam-1356">
+                    <note pname="g" oct="5" dur="16" xml:id="m33_s1_e1"/>
+                    <note pname="c" oct="6" dur="16" xml:id="m33_s1_e2"/>
+                    <note pname="e" oct="5" dur="16" accid="n" xml:id="m33_s1_e3"/>
+                    <note pname="f" oct="6" dur="16" xml:id="m33_s1_e4"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1357"/>
+                  <beam xml:id="beam-1358">
+                    <note pname="a" oct="5" dur="16" xml:id="m33_s1_e6"/>
+                    <note pname="b" oct="4" dur="16" accid="n" xml:id="m33_s1_e7"/>
+                    <note pname="c" oct="5" dur="16" xml:id="m33_s1_e8"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1359"/>
+                  <beam xml:id="beam-1360">
+                    <note pname="f" oct="5" dur="16" xml:id="m33_s1_e10"/>
+                    <note pname="g" oct="4" dur="16" xml:id="m33_s1_e11"/>
+                    <note pname="a" oct="4" dur="16" xml:id="m33_s1_e12"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1361">
+                <layer xml:id="layer-1362">
+                  <beam xml:id="beam-1363">
+                    <note pname="c" oct="5" dur="8" xml:id="note-1364"/>
+                    <note pname="c" oct="4" dur="8" xml:id="m33_s2_e2"/>
+                    <note pname="f" oct="5" dur="8" xml:id="note-1365"/>
+                    <note pname="a" oct="5" dur="8" xml:id="note-1366"/>
+                    <note pname="c" oct="5" dur="8" xml:id="note-1367"/>
+                    <note pname="e" oct="5" dur="8" accid="f" xml:id="m33_s2_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1368">
+                <layer xml:id="layer-1369">
+                  <note pname="a" oct="2" dur="4" xml:id="note-1370"/>
+                  <note pname="a" oct="3" dur="4" xml:id="note-1371"/>
+                  <rest dur="8" xml:id="rest-1372"/>
+                  <note pname="c" oct="3" dur="8" xml:id="note-1373"/>
+                </layer>
+              </staff>
+              <slur staff="1" startid="#m34_s1_e2" curvedir="above" endid="#m33_s1_e1" xml:id="slur-1374"/>
+              <slur staff="1" startid="#m33_s1_e2" curvedir="above" endid="#m33_s1_e4" xml:id="slur-1375"/>
+              <slur staff="1" startid="#m33_s1_e6" curvedir="above" endid="#m33_s1_e8" xml:id="slur-1376"/>
+              <slur staff="1" startid="#m33_s1_e10" curvedir="above" endid="#m33_s1_e12" xml:id="slur-1377"/>
+              <slur staff="2" startid="#m33_s2_e2" curvedir="above" endid="#m33_s2_e6" xml:id="slur-1378"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1379">
+                <fb xml:id="fb-1380">
+                  <f xml:id="f-1381">7</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1382">
+                <fb xml:id="fb-1383">
+                  <f xml:id="f-1384">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3.5" xml:id="harm-1385">
+                <fb xml:id="fb-1386">
+                  <f xml:id="f-1387">6</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="34" xml:id="m34">
+              <staff n="1" xml:id="staff-1388">
+                <layer xml:id="layer-1389">
+                  <beam xml:id="beam-1390">
+                    <note pname="a" oct="4" dur="8" xml:id="note-1391"/>
+                    <note pname="d" oct="5" dur="8" xml:id="m34_s1_e2"/>
+                    <note pname="f" oct="5" dur="8" xml:id="note-1392"/>
+                    <note pname="a" oct="5" dur="8" xml:id="m34_s1_e4"/>
+                  </beam>
+                  <beam xml:id="beam-1393">
+                    <note pname="c" oct="6" dur="16" xml:id="note-1394"/>
+                    <note pname="a" oct="5" dur="16" xml:id="m34_s1_e6"/>
+                    <note pname="g" oct="5" dur="16" xml:id="note-1395"/>
+                    <note pname="f" oct="5" dur="16" xml:id="m34_s1_e8"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1396">
+                <layer xml:id="layer-1397">
+                  <beam xml:id="beam-1398">
+                    <note pname="d" oct="5" dur="16" xml:id="note-1399"/>
+                    <note pname="b" oct="3" dur="16" xml:id="m34_s2_e2"/>
+                    <note pname="g" oct="4" dur="16" xml:id="note-1400"/>
+                    <note pname="f" oct="4" dur="16" xml:id="m34_s2_e4"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1401"/>
+                  <beam xml:id="beam-1402">
+                    <note pname="d" oct="4" dur="16" xml:id="m34_s2_e6"/>
+                    <note pname="c" oct="5" dur="16" xml:id="note-1403"/>
+                    <note pname="b" oct="4" dur="16" xml:id="m34_s2_e8"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1404"/>
+                  <beam xml:id="beam-1405">
+                    <note pname="f" oct="4" dur="16" xml:id="m34_s2_e10"/>
+                    <note pname="e" oct="5" dur="16" xml:id="note-1406"/>
+                    <note pname="d" oct="4" dur="16" xml:id="m34_s2_e12"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1407">
+                <layer xml:id="layer-1408">
+                  <note pname="b" oct="2" dur="4" xml:id="note-1409"/>
+                  <note pname="b" oct="3" dur="4" xml:id="note-1410"/>
+                  <rest dur="8" xml:id="rest-1411"/>
+                  <note pname="a" oct="3" dur="8" xml:id="note-1412"/>
+                </layer>
+              </staff>
+              <slur staff="1" startid="#m34_s1_e2" endid="#m34_s1_e4" curvedir="above" xml:id="slur-1413"/>
+              <slur staff="2" startid="#m34_s2_e2" endid="#m34_s1_e4" curvedir="below" xml:id="slur-1414"/>
+              <slur staff="2" startid="#m34_s2_e6" endid="#m34_s2_e8" curvedir="below" xml:id="slur-1415"/>
+              <slur staff="2" startid="#m34_s2_e10" endid="#m34_s2_e12" curvedir="below" xml:id="slur-1416"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1417">
+                <fb xml:id="fb-1418">
+                  <f xml:id="f-1419">7</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" extender="true" xml:id="harm-1420"/>
+              <harm staff="3" place="below" tstamp="3.5" xml:id="harm-1421">
+                <fb xml:id="fb-1422">
+                  <f xml:id="f-1423">4</f>
+                  <f xml:id="f-1424">2</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="35" xml:id="m35">
+              <staff n="1" xml:id="staff-1425">
+                <layer xml:id="layer-1426">
+                  <beam xml:id="beam-1427">
+                    <note pname="b" oct="5" dur="8" dots="1" xml:id="note-1428"/>
+                    <note pname="c" oct="5" dur="16" xml:id="note-1429"/>
+                  </beam>
+                  <note pname="e" oct="5" dur="8" grace="unknown" stem.dir="up" slur="i1" xml:id="note-1430"/>
+                  <note pname="d" oct="5" dur="4" dots="1" xml:id="m35_s1_e4" slur="t1"/>
+                  <note pname="e" oct="5" dur="8" xml:id="note-1431"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1432">
+                <layer xml:id="layer-1433">
+                  <beam xml:id="beam-1434">
+                    <note pname="e" oct="5" dur="8" dots="1" xml:id="note-1435"/>
+                    <note pname="a" oct="4" dur="16" xml:id="note-1436"/>
+                  </beam>
+                  <note pname="g" oct="4" dur="8" grace="unknown" stem.dir="up" slur="i1" xml:id="note-1437"/>
+                  <note pname="f" oct="4" dur="4" dots="1" xml:id="m35_s2_e4" slur="t1"/>
+                  <note pname="e" oct="4" dur="8" xml:id="note-1438"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1439">
+                <layer xml:id="layer-1440">
+                  <beam xml:id="beam-1441">
+                    <note pname="g" oct="3" dur="8" xml:id="note-1442"/>
+                    <note pname="a" oct="3" dur="8" xml:id="note-1443"/>
+                    <note pname="b" oct="3" dur="8" xml:id="note-1444"/>
+                    <note pname="b" oct="3" dur="8" xml:id="note-1445"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-1446"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-1447"/>
+                  </beam>
+                </layer>
+              </staff>
+              <trill staff="1" place="above" tstamp="2" startid="#m35_s1_e4" xml:id="trill-1448"/>
+              <trill staff="2" place="above" tstamp="2" startid="#m35_s2_e4" xml:id="trill-1449"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1450">
+                <fb xml:id="fb-1451">
+                  <f xml:id="f-1452">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="1.5" xml:id="harm-1453">
+                <fb xml:id="fb-1454">
+                  <f xml:id="f-1455">7</f>
+                  <f xml:id="f-1456">5</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1457">
+                <fb xml:id="fb-1458">
+                  <f xml:id="f-1459">6</f>
+                  <f xml:id="f-1460">4</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-1461">
+                <fb xml:id="fb-1462">
+                  <f xml:id="f-1463">5</f>
+                  <f xml:id="f-1464">3</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="36" xml:id="m36" right="rptend" type="repeat">
+              <staff n="1" xml:id="staff-1465">
+                <layer xml:id="layer-1466">
+                  <note pname="e" oct="5" dur="2" dots="1" xml:id="note-1467"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1468">
+                <layer xml:id="layer-1469">
+                  <note pname="e" oct="4" dur="2" dots="1" xml:id="note-1470"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1471">
+                <layer xml:id="layer-1472">
+                  <beam xml:id="beam-1473">
+                    <note pname="e" oct="2" dur="8" xml:id="note-1474"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-1475"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-1476"/>
+                    <note pname="f" oct="3" dur="8" xml:id="note-1477"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-1478"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-1479"/>
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="37" xml:id="m37" left="rptstart">
+              <staff n="1" xml:id="staff-1480">
+                <layer xml:id="layer-1481">
+                  <beam xml:id="beam-1482">
+                    <note pname="g" oct="5" dur="8" dots="1" xml:id="note-1483"/>
+                    <note pname="b" oct="4" dur="16" xml:id="note-1484"/>
+                  </beam>
+                  <beam xml:id="beam-1485">
+                    <note pname="c" oct="5" dur="32" grace="unknown" slur="i1" fontsize="small" xml:id="note-1486"/>
+                    <note pname="d" oct="5" dur="32" accid="f" grace="unknown" slur="m1" fontsize="small" xml:id="note-1487"/>
+                    <note pname="e" oct="5" dur="32" grace="unknown" slur="t1" fontsize="small" xml:id="note-1488"/>
+                  </beam>
+                  <note pname="d" oct="5" dur="4" dots="1" accid="f" xml:id="m37_s1_e6"/>
+                  <note pname="c" oct="5" dur="8" xml:id="note-1489"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1490">
+                <layer xml:id="layer-1491">
+                  <mRest xml:id="mRest-1492"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1493">
+                <layer xml:id="layer-1494">
+                  <beam xml:id="beam-1495">
+                    <note pname="e" oct="3" dur="8" xml:id="m37_s3_e1"/>
+                    <note pname="e" oct="3" dur="8" xml:id="note-1496"/>
+                    <note pname="f" oct="3" dur="8" xml:id="note-1497"/>
+                    <note pname="f" oct="3" dur="8" xml:id="note-1498"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-1499"/>
+                    <note pname="g" oct="3" dur="8" xml:id="m37_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="3" startid="#m37_s3_e1" endid="#m37_s3_e6" curvedir="above" xml:id="slur-1500"/>
+              <trill staff="1" place="above" startid="#m37_s1_e6" tstamp="2" xml:id="trill-1501"/>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1502">
+                <fb xml:id="fb-1503">
+                  <f xml:id="f-1504">6♭</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-1505">
+                <fb xml:id="fb-1506">
+                  <f xml:id="f-1507">5♭</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="38" xml:id="m38">
+              <staff n="1" xml:id="staff-1508">
+                <layer xml:id="layer-1509">
+                  <beam xml:id="beam-1510">
+                    <note pname="c" oct="5" dur="16" xml:id="note-1511"/>
+                    <note pname="d" oct="4" dur="16" accid="n" slur="i1" xml:id="note-1512"/>
+                    <note pname="e" oct="4" dur="16" slur="m1" xml:id="note-1513"/>
+                    <note pname="g" oct="4" dur="16" slur="t1" xml:id="note-1514"/>
+                  </beam>
+                  <beam xml:id="beam-1515">
+                    <note pname="a" oct="4" dur="16" xml:id="m38_s1_e5"/>
+                    <note pname="c" oct="5" dur="16" xml:id="note-1516"/>
+                    <note pname="e" oct="5" dur="16" xml:id="note-1517"/>
+                    <note pname="d" oct="5" dur="16" xml:id="m38_s1_e8"/>
+                  </beam>
+                  <note pname="e" oct="5" dur="4" tie="i" xml:id="note-1518"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1519">
+                <layer xml:id="layer-1520">
+                  <mRest xml:id="mRest-1521"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1522">
+                <layer xml:id="layer-1523">
+                  <beam xml:id="beam-1524">
+                    <note pname="a" oct="3" dur="8" xml:id="m38_s3_e1"/>
+                    <note pname="a" oct="3" dur="8" xml:id="note-1525"/>
+                    <note pname="a" oct="3" dur="8" xml:id="note-1526"/>
+                    <note pname="a" oct="3" dur="8" xml:id="note-1527"/>
+                    <note pname="g" oct="3" dur="8" accid="f" xml:id="note-1528"/>
+                    <note pname="g" oct="3" dur="8" xml:id="m38_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="1" startid="#m38_s1_e5" endid="#m38_s1_e8" curvedir="above" xml:id="slur-1529"/>
+              <slur staff="3" startid="#m38_s3_e1" endid="#m38_s3_e6" curvedir="above" xml:id="slur-1530"/>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-1531">
+                <fb xml:id="fb-1532">
+                  <f xml:id="f-1533">6</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="39" xml:id="m39">
+              <staff n="1" xml:id="staff-1534">
+                <layer xml:id="layer-1535">
+                  <beam xml:id="beam-1536">
+                    <note pname="e" oct="5" dur="16" tie="t" xml:id="note-1537"/>
+                    <note pname="c" oct="6" dur="16" slur="i1" xml:id="note-1538"/>
+                    <note pname="d" oct="5" dur="16" slur="m1" xml:id="note-1539"/>
+                    <note pname="e" oct="5" dur="16" slur="t1" xml:id="note-1540"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1541"/>
+                  <beam xml:id="beam-1542">
+                    <note pname="g" oct="5" dur="16" slur="i2" xml:id="note-1543"/>
+                    <note pname="a" oct="4" accid="n" dur="16" slur="m2" xml:id="note-1544"/>
+                    <note pname="b" oct="4" dur="16" slur="t2" xml:id="note-1545"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1546"/>
+                  <beam xml:id="beam-1547">
+                    <note pname="e" oct="5" dur="16" slur="i3" xml:id="note-1548"/>
+                    <note pname="f" oct="4" dur="16" slur="m3" xml:id="note-1549"/>
+                    <note pname="g" oct="4" dur="16" accid="f" slur="t3" xml:id="note-1550"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1551">
+                <layer xml:id="layer-1552">
+                  <beam xml:id="beam-1553">
+                    <note pname="a" oct="5" dur="8" dots="1" accid="n" xml:id="note-1554"/>
+                    <note pname="c" oct="5" dur="16" xml:id="note-1555"/>
+                  </beam>
+                  <beam xml:id="beam-1556">
+                    <note pname="d" oct="5" dur="32" grace="unknown" slur="i1" fontsize="small" xml:id="note-1557"/>
+                    <note pname="e" oct="5" dur="32" accid="f" grace="unknown" slur="m1" fontsize="small" xml:id="note-1558"/>
+                    <note pname="f" oct="5" dur="32" grace="unknown" slur="m1" fontsize="small" xml:id="note-1559"/>
+                  </beam>
+                  <note pname="e" oct="5" dur="4" dots="1" xml:id="m39_s2_e6" slur="t1"/>
+                  <note pname="d" oct="5" dur="8" xml:id="note-1560"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1561">
+                <layer xml:id="layer-1562">
+                  <beam xml:id="beam-1563">
+                    <note pname="f" oct="3" dur="8" xml:id="note-1564"/>
+                    <note pname="f" oct="3" dur="8" xml:id="note-1565"/>
+                    <note pname="g" oct="3" dur="8" accid="n" xml:id="note-1566"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-1567"/>
+                    <note pname="a" oct="3" dur="8" accid="n" xml:id="note-1568"/>
+                    <note pname="a" oct="3" dur="8" xml:id="note-1569"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1570">
+                <fb xml:id="fb-1571">
+                  <f xml:id="f-1572">7</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1573">
+                <fb xml:id="fb-1574">
+                  <f xml:id="f-1575">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-1576">
+                <fb xml:id="fb-1577">
+                  <f xml:id="f-1578">5</f>
+                </fb>
+              </harm>
+              <trill staff="2" place="above" tstamp="2" startid="#m39_s2_e6" xml:id="trill-1579"/>
+            </measure>
+            <measure n="40" xml:id="m40">
+              <staff n="1" xml:id="staff-1580">
+                <layer xml:id="layer-1581">
+                  <beam xml:id="beam-1582">
+                    <note pname="f" oct="4" dur="8" xml:id="note-1583"/>
+                    <note pname="e" oct="5" dur="8" accid="f" slur="i1" xml:id="note-1584"/>
+                    <note pname="d" oct="5" dur="8" slur="t1" xml:id="note-1585"/>
+                    <note pname="a" oct="5" dur="8" accid="f" slur="i2" xml:id="note-1586"/>
+                    <note pname="b" oct="4" dur="8" slur="m2" accid="n" xml:id="note-1587"/>
+                    <note pname="c" oct="5" dur="8" slur="t2" xml:id="note-1588"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1589">
+                <layer xml:id="layer-1590">
+                  <beam xml:id="beam-1591">
+                    <note pname="d" oct="5" dur="16" xml:id="note-1592"/>
+                    <note pname="e" oct="4" dur="16" accid="n" slur="i1" xml:id="note-1593"/>
+                    <note pname="f" oct="4" dur="16" slur="m1" xml:id="note-1594"/>
+                    <note pname="a" oct="4" dur="16" accid="n" slur="t1" xml:id="note-1595"/>
+                  </beam>
+                  <beam xml:id="beam-1596">
+                    <note pname="b" oct="4" dur="16" xml:id="m40_s2_e5"/>
+                    <note pname="d" oct="5" dur="16" xml:id="note-1597"/>
+                    <note pname="f" oct="5" dur="16" xml:id="note-1598"/>
+                    <note pname="e" oct="5" dur="16" accid="n" xml:id="m40_s2_e8"/>
+                  </beam>
+                  <note pname="f" oct="5" dur="4" tie="i" xml:id="note-1599"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1600">
+                <layer xml:id="layer-1601">
+                  <beam xml:id="beam-1602">
+                    <note pname="b" oct="3" dur="8" xml:id="note-1603"/>
+                    <note pname="b" oct="3" dur="8" xml:id="note-1604"/>
+                    <note pname="b" oct="3" dur="8" xml:id="note-1605"/>
+                    <note pname="b" oct="3" dur="8" xml:id="note-1606"/>
+                    <note pname="a" oct="3" dur="8" accid="f" xml:id="note-1607"/>
+                    <note pname="a" oct="3" dur="8" xml:id="note-1608"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="2" startid="#m40_s2_e5" endid="#m40_s2_e8" curvedir="above" xml:id="slur-1609"/>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-1610">
+                <fb xml:id="fb-1611">
+                  <f xml:id="f-1612">6</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="41" xml:id="m41">
+              <staff n="1" xml:id="staff-1613">
+                <layer xml:id="layer-1614">
+                  <beam xml:id="beam-1615">
+                    <note pname="b" oct="4" dur="8" accid="n" xml:id="note-1616"/>
+                    <note pname="g" oct="4" dur="8" xml:id="note-1617"/>
+                  </beam>
+                  <rest dur="8" xml:id="rest-1618"/>
+                  <note pname="f" oct="5" dur="8" xml:id="note-1619"/>
+                  <beam xml:id="beam-1620">
+                    <note pname="d" oct="5" dur="8" dots="1" xml:id="m41_s1_e5"/>
+                    <note pname="c" oct="5" dur="32" xml:id="note-1621"/>
+                    <note pname="d" oct="5" dur="32" xml:id="m41_s1_e7"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1622">
+                <layer xml:id="layer-1623">
+                  <beam xml:id="beam-1624">
+                    <note pname="f" oct="5" dur="16" tie="t" xml:id="note-1625"/>
+                    <note pname="d" oct="6" dur="16" slur="i1" xml:id="note-1626"/>
+                    <note pname="e" oct="5" dur="16" accid="n" slur="m1" xml:id="note-1627"/>
+                    <note pname="f" oct="5" dur="16" slur="t1" xml:id="note-1628"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1629"/>
+                  <beam xml:id="beam-1630">
+                    <note pname="a" oct="5" dur="16" slur="i2" xml:id="note-1631"/>
+                    <note pname="b" oct="4" accid="n" dur="16" slur="m2" xml:id="note-1632"/>
+                    <note pname="c" oct="5" dur="16" slur="t2" xml:id="note-1633"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1634"/>
+                  <beam xml:id="beam-1635">
+                    <note pname="f" oct="5" dur="16" slur="i3" xml:id="note-1636"/>
+                    <note pname="g" oct="4" dur="16" slur="m3" xml:id="note-1637"/>
+                    <note pname="a" oct="4" dur="16" accid="f" slur="t3" xml:id="note-1638"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1639">
+                <layer xml:id="layer-1640">
+                  <beam xml:id="beam-1641">
+                    <note pname="g" oct="3" dur="8" xml:id="m41_s3_e1"/>
+                    <note pname="g" oct="3" dur="8" xml:id="note-1642"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-1643"/>
+                    <note pname="d" oct="3" dur="8" xml:id="note-1644"/>
+                    <note pname="b" oct="3" dur="8" accid="n" xml:id="note-1645"/>
+                    <note pname="b" oct="3" dur="8" xml:id="m41_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <trill staff="1" place="above" tstamp="3" startid="#m41_s1_e5" xml:id="trill-1646"/>
+              <slur staff="1" startid="#m41_s1_e5" endid="#m41_s1_e7" curvedir="above" xml:id="slur-1647"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1648">
+                <fb xml:id="fb-1649">
+                  <f xml:id="f-1650">7</f>
+                  <f xml:id="f-1651">♮</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1652">
+                <fb xml:id="fb-1653">
+                  <f xml:id="f-1654">6♮</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-1655">
+                <fb xml:id="fb-1656">
+                  <f xml:id="f-1657">6</f>
+                  <f xml:id="f-1658">5</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="42" xml:id="m42">
+              <staff n="1" xml:id="staff-1659">
+                <layer xml:id="layer-1660">
+                  <note pname="e" oct="5" dur="2" dots="1" tie="i" xml:id="note-1661"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1662">
+                <layer xml:id="layer-1663">
+                  <note pname="g" oct="4" dur="4" xml:id="note-1664"/>
+                  <rest dur="8" xml:id="rest-1665"/>
+                  <note pname="c" oct="5" dur="8" xml:id="note-1666"/>
+                  <beam xml:id="beam-1667">
+                    <note pname="f" oct="4" dur="8" dots="1" accid="s" xml:id="m42_s2_e4"/>
+                    <note pname="e" oct="4" dur="32" accid="n" xml:id="note-1668"/>
+                    <note pname="e" oct="4" dur="32" xml:id="m42_s2_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1669">
+                <layer xml:id="layer-1670">
+                  <beam xml:id="beam-1671">
+                    <note pname="c" oct="3" dur="8" xml:id="m42_s3_e1"/>
+                    <note pname="c" oct="3" dur="8" xml:id="note-1672"/>
+                    <note pname="b" oct="2" dur="8" accid="f" xml:id="note-1673"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-1674"/>
+                    <note pname="a" oct="2" dur="8" accid="n" xml:id="note-1675"/>
+                    <note pname="a" oct="2" dur="8" xml:id="m42_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <trill staff="2" place="above" tstamp="3" startid="#m42_s2_e4" xml:id="trill-1676"/>
+              <slur staff="2" startid="#m42_s2_e4" endid="#m42_s2_e6" curvedir="below" xml:id="slur-1677"/>
+              <slur staff="3" startid="#m42_s3_e1" endid="#m42_s3_e6" curvedir="below" xml:id="slur-1678"/>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1679">
+                <fb xml:id="fb-1680">
+                  <f xml:id="f-1681">4</f>
+                  <f xml:id="f-1682">2</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" n="stroke" xml:id="harm-1683">
+                <fb xml:id="fb-1684">
+                  <f xml:id="f-1685">6</f>
+                  <f xml:id="f-1686">5♭</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="43" xml:id="m43">
+              <staff n="1" xml:id="staff-1687">
+                <layer xml:id="layer-1688">
+                  <note pname="e" oct="5" dur="8" tie="t" xml:id="note-1689"/>
+                  <note pname="d" oct="5" dur="4" xml:id="note-1690"/>
+                  <beam xml:id="beam-1691">
+                    <note pname="c" oct="5" dur="16" slur="i1" xml:id="note-1692"/>
+                    <note pname="b" oct="4" dur="16" slur="t1" xml:id="note-1693"/>
+                  </beam>
+                  <note pname="a" oct="4" dur="16" accid="n" xml:id="m43_s1_e5"/>
+                  <note pname="g" oct="4" dur="16" xml:id="note-1694"/>
+                  <note pname="f" oct="4" dur="16" accid="s" xml:id="note-1695"/>
+                  <note pname="g" oct="4" dur="16" xml:id="m43_s1_e8"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1696">
+                <layer xml:id="layer-1697">
+                  <note pname="g" oct="4" dur="4" dots="1" xml:id="note-1698"/>
+                  <note pname="g" oct="3" dur="8" xml:id="note-1699"/>
+                  <beam xml:id="beam-1700">
+                    <note oct="4" pname="c" dur="16" xml:id="m43_s2_e3"/>
+                    <note pname="b" oct="3" dur="16" xml:id="note-1701"/>
+                    <note pname="a" oct="3" dur="16" accid="n" xml:id="note-1702"/>
+                    <note pname="b" oct="3" dur="16" xml:id="m43_s2_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1703">
+                <layer xml:id="layer-1704">
+                  <beam xml:id="beam-1705">
+                    <note pname="b" oct="2" dur="8" xml:id="m43_s3_e1"/>
+                    <note pname="b" oct="2" dur="8" xml:id="note-1706"/>
+                    <note pname="e" oct="2" dur="8" xml:id="note-1707"/>
+                    <note pname="e" oct="2" dur="8" xml:id="note-1708"/>
+                    <note pname="c" oct="3" dur="8" xml:id="note-1709"/>
+                    <note pname="c" oct="3" dur="8" xml:id="m43_s3_e6"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur staff="1" startid="#m43_s1_e5" endid="#m43_s1_e8" curvedir="below" xml:id="slur-1710"/>
+              <slur staff="2" startid="#m43_s2_e3" endid="#m43_s2_e6" curvedir="below" xml:id="slur-1711"/>
+              <slur staff="3" startid="#m43_s3_e1" endid="#m43_s3_e6" curvedir="below" xml:id="slur-1712"/>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1713">
+                <fb xml:id="fb-1714">
+                  <f xml:id="f-1715">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1716">
+                <fb xml:id="fb-1717">
+                  <f xml:id="f-1718">7</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2.5" xml:id="harm-1719">
+                <fb xml:id="fb-1720">
+                  <f xml:id="f-1721">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-1722">
+                <fb xml:id="fb-1723">
+                  <f xml:id="f-1724">6♮</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="44" xml:id="m44">
+              <staff n="1" xml:id="staff-1725">
+                <layer xml:id="layer-1726">
+                  <beam xml:id="beam-1727">
+                    <note pname="f" oct="4" dur="8" accid="s" xml:id="note-1728"/>
+                    <note pname="e" oct="5" dur="8" accid="f" slur="i1" xml:id="note-1729"/>
+                    <note pname="d" oct="5" dur="8" slur="t1" xml:id="note-1730"/>
+                    <note pname="f" oct="5" dur="8" accid="s" slur="i2" xml:id="note-1731"/>
+                    <note pname="g" oct="5" dur="8" slur="m2" accid="n" xml:id="note-1732"/>
+                    <note pname="a" oct="5" dur="8" slur="t2" accid="n" xml:id="note-1733"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1734">
+                <layer xml:id="layer-1735">
+                  <note pname="a" oct="3" dur="4" accid="n" xml:id="note-1736"/>
+                  <rest dur="8" xml:id="rest-1737"/>
+                  <beam xml:id="beam-1738">
+                    <note pname="a" oct="5" dur="8" accid="n" slur="i1" xml:id="note-1739"/>
+                    <note pname="b" oct="5" dur="8" slur="m1" xml:id="note-1740"/>
+                    <note pname="c" oct="5" dur="8" slur="t1" xml:id="note-1741"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1742">
+                <layer xml:id="layer-1743">
+                  <beam xml:id="beam-1744">
+                    <note pname="d" oct="3" dur="16" xml:id="note-1745"/>
+                    <note pname="d" oct="2" dur="16" slur="i1" xml:id="note-1746"/>
+                    <note pname="f" oct="2" dur="16" accid="s" slur="m1" xml:id="note-1747"/>
+                    <note pname="a" oct="3" dur="16" accid="n" slur="t1" xml:id="note-1748"/>
+                  </beam>
+                  <beam xml:id="beam-1749">
+                    <note pname="c" oct="3" dur="16" slur="i2" xml:id="note-1750"/>
+                    <note pname="e" oct="3" dur="16" slur="t2" xml:id="note-1751"/>
+                    <note pname="e" oct="3" dur="16" slur="i3" xml:id="note-1752"/>
+                    <note pname="d" oct="3" dur="16" slur="t3" xml:id="note-1753"/>
+                  </beam>
+                  <beam xml:id="beam-1754">
+                    <note pname="d" oct="3" dur="16" xml:id="note-1755"/>
+                    <note pname="c" oct="3" dur="16" xml:id="note-1756"/>
+                    <note pname="b" oct="2" dur="16" xml:id="note-1757"/>
+                    <note pname="a" oct="2" dur="16" xml:id="note-1758"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1759">
+                <fb xml:id="fb-1760">
+                  <f xml:id="f-1761">♯</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="1.5" xml:id="harm-1762">
+                <fb xml:id="fb-1763">
+                  <f xml:id="f-1764">7</f>
+                  <f xml:id="f-1765">5</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1766">
+                <fb xml:id="fb-1767">
+                  <f xml:id="f-1768">4</f>
+                  <f xml:id="f-1769">2</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2.5" xml:id="harm-1770">
+                <fb xml:id="fb-1771">
+                  <f xml:id="f-1772">6</f>
+                  <f xml:id="f-1773">2</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-1774">
+                <fb xml:id="fb-1775">
+                  <f xml:id="f-1776">6</f>
+                  <f xml:id="f-1777">4</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3.5" xml:id="harm-1778">
+                <fb xml:id="fb-1779">
+                  <f xml:id="f-1780">7</f>
+                  <f xml:id="f-1781">5</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="45" xml:id="m45">
+              <staff n="1" xml:id="staff-1782">
+                <layer xml:id="layer-1783">
+                  <beam xml:id="beam-1784">
+                    <note pname="a" oct="5" dur="8" stem.dir="down" xml:id="note-1785"/>
+                    <note pname="a" oct="4" dur="8" stem.dir="down" slur="i1" xml:id="note-1786"/>
+                    <note pname="d" oct="5" dur="8" stem.dir="down" accid="f" slur="m1" xml:id="note-1787"/>
+                    <note pname="f" oct="5" dur="8" stem.dir="down" slur="m1" xml:id="note-1788"/>
+                    <note pname="a" oct="5" dur="8" stem.dir="down" slur="m1" xml:id="note-1789"/>
+                    <note pname="d" oct="6" dur="8" stem.dir="down" slur="t1" xml:id="note-1790"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1791">
+                <layer xml:id="layer-1792">
+                  <beam xml:id="beam-1793">
+                    <note pname="f" oct="4" dur="16" stem.dir="up" artic="stacc" xml:id="note-1794"/>
+                    <note pname="a" oct="5" dur="16" stem.dir="down" slur="i1" xml:id="note-1795"/>
+                    <note pname="c" oct="5" dur="16" stem.dir="down" slur="m1" xml:id="note-1796"/>
+                    <note pname="d" oct="5" dur="16" stem.dir="down" accid="f" slur="t1" xml:id="note-1797"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1798"/>
+                  <beam xml:id="beam-1799">
+                    <note pname="f" oct="5" dur="16" stem.dir="down" slur="i2" xml:id="note-1800"/>
+                    <note pname="g" oct="4" dur="16" stem.dir="down" slur="m2" xml:id="note-1801"/>
+                    <note pname="a" oct="4" dur="16" slur="t1" stem.dir="down" xml:id="note-1802"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1803"/>
+                  <beam xml:id="beam-1804">
+                    <note pname="d" oct="5" dur="16" stem.dir="down" accid="f" slur="i3" xml:id="note-1805"/>
+                    <note pname="e" oct="4" dur="16" stem.dir="down" accid="n" slur="m3" xml:id="note-1806"/>
+                    <note pname="f" oct="4" dur="16" stem.dir="down" slur="t3" xml:id="note-1807"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1808">
+                <layer xml:id="layer-1809">
+                  <note pname="f" oct="2" dur="4" stem.dir="up" xml:id="note-1810"/>
+                  <note pname="f" oct="3" dur="4" stem.dir="down" xml:id="note-1811"/>
+                  <rest dur="8" xml:id="rest-1812"/>
+                  <note pname="a" oct="2" dur="8" stem.dir="up" xml:id="note-1813"/>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1814">
+                <fb xml:id="fb-1815">
+                  <f xml:id="f-1816">5</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1817">
+                <fb xml:id="fb-1818">
+                  <f xml:id="f-1819">6 flat</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3.5" xml:id="harm-1820">
+                <fb xml:id="fb-1821">
+                  <f xml:id="f-1822">6</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="46" xml:id="m46">
+              <staff n="1" xml:id="staff-1823">
+                <layer xml:id="layer-1824">
+                  <beam xml:id="beam-1825">
+                    <note pname="b" oct="5" dur="16" stem.dir="down" accid="n" xml:id="note-1826"/>
+                    <note pname="g" oct="4" dur="16" stem.dir="down" slur="i1" xml:id="note-1827"/>
+                    <note pname="e" oct="5" dur="16" stem.dir="down" slur="m1" xml:id="note-1828"/>
+                    <note pname="d" oct="5" dur="16" stem.dir="down" accid="n" slur="t1" xml:id="note-1829"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1830"/>
+                  <beam xml:id="beam-1831">
+                    <note pname="b" oct="4" dur="16" stem.dir="down" accid="n" slur="i2" xml:id="note-1832"/>
+                    <note pname="a" oct="5" dur="16" stem.dir="down" slur="m2" xml:id="note-1833"/>
+                    <note pname="g" oct="5" dur="16" stem.dir="down" slur="t2" xml:id="note-1834"/>
+                  </beam>
+                  <rest dur="16" xml:id="rest-1835"/>
+                  <beam xml:id="beam-1836">
+                    <note pname="d" oct="5" dur="16" stem.dir="down" slur="i3" xml:id="note-1837"/>
+                    <note pname="c" oct="6" dur="16" stem.dir="down" slur="m3" xml:id="note-1838"/>
+                    <note pname="b" oct="5" accid="n" dur="16" stem.dir="down" slur="t3" xml:id="note-1839"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1840">
+                <layer xml:id="layer-1841">
+                  <beam xml:id="beam-1842">
+                    <note pname="f" oct="4" dur="8" stem.dir="down" xml:id="note-1843"/>
+                    <note pname="b" oct="4" dur="8" stem.dir="down" accid="n" slur="i1" xml:id="note-1844"/>
+                    <note pname="d" oct="5" dur="8" stem.dir="down" slur="m1" xml:id="note-1845"/>
+                    <note pname="f" oct="5" dur="8" stem.dir="down" slur="t1" xml:id="note-1846"/>
+                  </beam>
+                  <beam xml:id="beam-1847">
+                    <note pname="a" oct="5" dur="16" stem.dir="down" artic="stacc" xml:id="note-1848"/>
+                    <note pname="f" oct="5" dur="16" stem.dir="down" slur="i2" xml:id="note-1849"/>
+                    <note pname="e" oct="5" dur="16" stem.dir="down" slur="m2" xml:id="note-1850"/>
+                    <note pname="d" oct="5" dur="16" stem.dir="down" slur="t2" xml:id="note-1851"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1852">
+                <layer xml:id="layer-1853">
+                  <note pname="g" oct="2" dur="4" stem.dir="up" xml:id="note-1854"/>
+                  <note pname="g" oct="3" dur="4" stem.dir="down" xml:id="note-1855"/>
+                  <rest dur="8" xml:id="rest-1856"/>
+                  <note pname="f" oct="3" dur="8" stem.dir="down" xml:id="note-1857"/>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1858">
+                <fb xml:id="fb-1859">
+                  <f xml:id="f-1860">7</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3.5" xml:id="harm-1861">
+                <fb xml:id="fb-1862">
+                  <f xml:id="f-1863">4</f>
+                </fb>
+              </harm>
+            </measure>
+            <measure n="47" xml:id="m47">
+              <staff n="1" xml:id="staff-1864">
+                <layer xml:id="layer-1865">
+                  <beam xml:id="beam-1866">
+                    <note pname="c" oct="6" dur="8" dots="1" stem.dir="down" xml:id="note-1867"/>
+                    <note pname="f" oct="5" dur="16" stem.dir="down" xml:id="note-1868"/>
+                  </beam>
+                  <note pname="e" oct="5" dur="8" stem.dir="up" fontsize="small" grace="unknown" slur="i1" xml:id="note-1869"/>
+                  <note pname="d" oct="5" dur="4" dots="1" stem.dir="down" xml:id="note-1870"/>
+                  <note pname="c" oct="5" dur="8" stem.dir="down" xml:id="note-1871"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff-1872">
+                <layer xml:id="layer-1873">
+                  <beam xml:id="beam-1874">
+                    <note pname="g" oct="5" dur="8" stem.dir="down" dots="1" xml:id="note-1875"/>
+                    <note pname="a" oct="4" dur="16" stem.dir="down" accid="n" xml:id="note-1876"/>
+                  </beam>
+                  <note pname="c" oct="5" dur="8" stem.dir="up" slur="i2" fontsize="small" grace="unknown" xml:id="note-1877"/>
+                  <note pname="b" oct="4" dur="4" dots="1" stem.dir="down" accid="n" xml:id="note-1878"/>
+                  <note pname="c" oct="5" dur="8" stem.dir="down" xml:id="note-1879"/>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff-1880">
+                <layer xml:id="layer-1881">
+                  <beam xml:id="beam-1882">
+                    <note pname="e" oct="3" dur="8" stem.dir="up" xml:id="note-1883"/>
+                    <note pname="f" oct="3" dur="8" stem.dir="up" xml:id="note-1884"/>
+                    <note pname="g" oct="3" dur="8" stem.dir="up" xml:id="note-1885"/>
+                    <note pname="g" oct="3" dur="8" stem.dir="up" xml:id="note-1886"/>
+                    <note pname="g" oct="2" dur="8" stem.dir="up" xml:id="note-1887"/>
+                    <note pname="g" oct="2" dur="8" stem.dir="up" xml:id="note-1888"/>
+                  </beam>
+                </layer>
+              </staff>
+              <harm staff="3" place="below" tstamp="1" xml:id="harm-1889">
+                <fb xml:id="fb-1890">
+                  <f xml:id="f-1891">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="1.5" xml:id="harm-1892">
+                <fb xml:id="fb-1893">
+                  <f xml:id="f-1894">7</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="2" xml:id="harm-1895">
+                <fb xml:id="fb-1896">
+                  <f xml:id="f-1897">6</f>
+                </fb>
+              </harm>
+              <harm staff="3" place="below" tstamp="3" xml:id="harm-1898">
+                <fb xml:id="fb-1899">
+                  <f xml:id="f-1900">7</f>
+                </fb>
+              </harm>
+            </measure>
+            <ending n="1" xml:id="ending-1901">
+              <measure n="48" xml:id="m48" right="rptend">
+                <staff n="1" xml:id="staff-1902">
+                  <layer xml:id="layer-1903">
+                    <note pname="c" oct="5" dur="2" dots="1" stem.dir="down" xml:id="note-1904"/>
+                  </layer>
+                </staff>
+                <staff n="2" xml:id="staff-1905">
+                  <layer xml:id="layer-1906">
+                    <note pname="c" oct="5" dur="2" dots="1" stem.dir="down" xml:id="note-1907"/>
+                  </layer>
+                </staff>
+                <staff n="3" xml:id="staff-1908">
+                  <layer xml:id="layer-1909">
+                    <beam xml:id="beam-1910">
+                      <note pname="c" oct="2" dur="16" stem.dir="up" xml:id="note-1911"/>
+                      <note pname="c" oct="3" dur="16" stem.dir="up" xml:id="note-1912"/>
+                      <note pname="e" oct="3" dur="16" stem.dir="up" xml:id="note-1913"/>
+                      <note pname="g" oct="3" dur="16" stem.dir="up" xml:id="note-1914"/>
+                    </beam>
+                    <beam xml:id="beam-1915">
+                      <note pname="c" oct="4" dur="16" stem.dir="down" xml:id="note-1916"/>
+                      <note pname="e" oct="4" dur="16" stem.dir="down" xml:id="note-1917"/>
+                      <note pname="d" oct="4" dur="16" stem.dir="down" xml:id="note-1918"/>
+                      <note pname="c" oct="4" dur="16" stem.dir="down" xml:id="note-1919"/>
+                    </beam>
+                    <beam xml:id="beam-1920">
+                      <note pname="b" oct="3" dur="16" stem.dir="down" xml:id="note-1921"/>
+                      <note pname="a" oct="3" dur="16" stem.dir="down" xml:id="note-1922"/>
+                      <note pname="g" oct="3" dur="16" stem.dir="down" xml:id="note-1923"/>
+                      <note pname="f" oct="3" dur="16" stem.dir="down" xml:id="note-1924"/>
+                    </beam>
+                  </layer>
+                </staff>
+                <harm staff="3" place="below" tstamp="3" xml:id="harm-1925">
+                  <fb xml:id="fb-1926">
+                    <f xml:id="f-1927">7</f>
+                    <f xml:id="f-1928">8</f>
+                  </fb>
+                </harm>
+              </measure>
+            </ending>
+            <ending n="2" xml:id="ending-1929">
+              <measure n="49" xml:id="m49" right="end">
+                <staff n="1" xml:id="staff-1930">
+                  <layer xml:id="layer-1931">
+                    <note pname="c" oct="5" dur="2" dots="1" stem.dir="down" xml:id="note-1932"/>
+                  </layer>
+                </staff>
+                <staff n="2" xml:id="staff-1933">
+                  <layer xml:id="layer-1934">
+                    <note pname="c" oct="5" dur="2" dots="1" xml:id="note-1935"/>
+                  </layer>
+                </staff>
+                <staff n="3" xml:id="staff-1936">
+                  <layer xml:id="layer-1937">
+                    <note pname="c" oct="2" dur="2" dots="1" xml:id="note-1938"/>
+                  </layer>
+                </staff>
+              </measure>
+            </ending>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

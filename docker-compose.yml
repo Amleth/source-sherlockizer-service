@@ -1,0 +1,73 @@
+version: "3"
+
+volumes:
+  meiweb:
+    driver: local
+    driver_opts:
+      device: $PWD/apache/public_html/files/meiweb/
+      o: bind
+      type: none
+
+services:
+  adminer:
+    container_name: adminer
+    image: adminer:latest
+    ports:
+      - "8080:8080"
+    restart: always
+  apache:
+    build: ./apache
+    container_name: apache
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./apache/public_html/:/usr/local/apache2/htdocs/
+      - type: volume
+        source: meiweb
+        target: /usr/local/apache2/htdocs/files/meiweb/
+  fuseki:
+    container_name: fuseki
+    build:
+      args:
+        JENA_VERSION: 4.0.0
+      context: ./fuseki
+    command: ["--tdb2", "--update", "--loc", "databases/DB2", "/ds"]
+    ports:
+      - "3030:3030"
+    volumes:
+      - ./logs:/fuseki/logs
+      - ./databases:/fuseki/databases
+  pg:
+    container_name: pg
+    environment:
+      POSTGRES_PASSWORD: sherlock
+      POSTGRES_USER: sherlock
+    image: postgres
+    ports:
+      - "127.0.0.1:5432:5432"
+    restart: always
+    volumes:
+      - ./data-pg:/var/lib/postgresql/data
+      - ./pg/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+  sss:
+    build: ./sss
+    container_name: sss
+    environment:
+      FUSEKI: http://host.docker.internal:3030/iremus/data
+      MEI_WEB_FILES_BASE_DIR: /meiweb/
+      MEI_WEB_FILES_BASE_URI: http://localhost:80/files/meiweb/
+      POSTGRES_HOST: pg
+      POSTGRES_PASSWORD: sherlock
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: sherlock
+      SHERLOCK_ID_BASE_URI: http://localhost:3000/id/
+    links:
+      - "pg"
+    ports:
+      - "127.0.0.1:8000:80"
+    restart: always
+    volumes:
+      - type: volume
+        source: meiweb
+        target: /meiweb/

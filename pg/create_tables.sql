@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS cache (
+    graph VARCHAR(256) NOT NULL,
+    key VARCHAR(1024) NOT NULL,
+    uuid UUID NOT NULL,
+    PRIMARY KEY (key)
+);
