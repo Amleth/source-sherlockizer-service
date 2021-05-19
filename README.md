@@ -11,6 +11,12 @@
 1. Fetch Apache Fuseki Docker by running this script: `./init-fuseki-docker.sh`
 2. `docker-compose up --build`
 
-### Links that could be useful
+### Links that can be useful
 
 - https://jena.apache.org/documentation/fuseki2/fuseki-docker.html
+
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
