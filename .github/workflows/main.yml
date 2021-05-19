@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  mermaid-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compile Mermaid Markdown
+        uses: neenjaw/compile-mermaid-markdown-action@0.2.4
+        with:
+          files: _README.md
+          output: README.md
