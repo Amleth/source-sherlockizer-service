@@ -13,7 +13,7 @@ jobs:
         id: getfile
         run: |
           echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep -e '.*\.md$' | xargs)"
-      - name: md files changed
+      - name: markdown files changed
         run: |
           echo ${{ steps.getfile.outputs.files }}
       - name: compile mermaid
