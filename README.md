@@ -1,4 +1,6 @@
-# Some technical thoughts on processing MEI sources to facilitate their future scholarly semantic annotation 🎼 + ⚓️ + 🌍
+# 🎼 + ⚓️ + 🌍
+
+# Some technical thoughts on processing MEI sources to facilitate their future scholarly semantic annotation
 
 The ideas presented in this repository have bee initiated in the [Polymir project](https://www.iremus.cnrs.fr/fr/projets-de-recherche/polymir-polyphonic-music-information-retrieval) (_Polyphonic Music Information Retrieval_, lead by Achille Davy-Rigaux and Christophe Guillotel-Nothmann), currently actively developed in the [SHERLOCK project](https://www.iremus.cnrs.fr/fr/projets-de-recherche/sherlock-social-sciences-humanities-corpora-exploration-and-active-reading) (_Social sciences & Humanities corpora Exploration and active Reading with Linked, Open & Contributive Knowledge organisation systems_, lead by Achille Davy-Rigaux and Thomas Bottini) and also currently discussed in the [Polifonia project](https://polifonia-project.eu/).
 
