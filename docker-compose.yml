@@ -28,16 +28,17 @@ services:
         target: /usr/local/apache2/htdocs/files/meiweb/
   fuseki:
     container_name: fuseki
-    build:
-      args:
-        JENA_VERSION: 4.0.0
-      context: ./fuseki
-    command: ["--tdb2", "--update", "--loc", "databases/DB2", "/ds"]
+    build: ./fuseki
+    environment:
+      ADMIN_PASSWORD: sherlock
+      ENABLE_DATA_WRITE: "true"
+      ENABLE_UPDATE: "true"
+      ENABLE_UPLOAD: "true"
     ports:
       - "3030:3030"
     volumes:
       - ./logs:/fuseki/logs
-      - ./databases:/fuseki/databases
+      - ./data-fuseki:/fuseki-base/databases
   pg:
     container_name: pg
     environment:
@@ -54,7 +55,7 @@ services:
     build: ./sss
     container_name: sss
     environment:
-      FUSEKI: http://host.docker.internal:3030/iremus/data
+      FUSEKI: http://host.docker.internal:3030/ds/data
       MEI_WEB_FILES_BASE_DIR: /meiweb/
       MEI_WEB_FILES_BASE_URI: http://localhost:80/files/meiweb/
       POSTGRES_HOST: pg

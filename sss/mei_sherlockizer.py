@@ -25,9 +25,6 @@ def isinteger(value):
 
 crm_ns = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
 crmdig_ns = Namespace("http://www.ics.forth.gr/isl/CRMdig/")
-polymir_ns = Namespace("http://data-iremus.huma-num.fr/ns/polymir#")
-sdt_ns = Namespace("http://data-iremus.huma-num.fr/datatypes/")
-she_ns = Namespace("http://data-iremus.huma-num.fr/ns/sherlock#")
 sherlockmei_ns = Namespace("http://data-iremus.huma-num.fr/ns/sherlockmei#")
 
 
@@ -36,9 +33,6 @@ def rdfize(graph, root, sha1, file_uri, score_offsets, elements_offsets_data):
     g.bind("crm", crm_ns)
     g.bind("crmdig", crmdig_ns)
     g.bind("dcterms", DCTERMS)
-    g.bind("polymir", polymir_ns)
-    g.bind("sdt", sdt_ns)
-    g.bind("she", she_ns)
     g.bind("sherlockmei", sherlockmei_ns)
 
     score_iri = u(sha1)
