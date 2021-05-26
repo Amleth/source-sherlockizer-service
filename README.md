@@ -1,3 +1,5 @@
+*written by: Thomas Bottini, may 2021*
+
 # 🎼 + ⚓️ + 🌍
 
 # Some technical thoughts on processing MEI sources to facilitate their future scholarly semantic annotation
